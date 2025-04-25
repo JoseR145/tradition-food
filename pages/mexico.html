@@ -3,24 +3,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>México - Traditional Food</title>
+    <title>Platos Típicos de México</title>
     <link rel="stylesheet" href="/tradition-food/assets/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://example.com/latin-pattern-mexico.jpg') repeat; /* Fondo con patrón mexicano */
+            background-color: #f4d03f; /* Amarillo como color de respaldo */
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para legibilidad */
+            border-radius: 10px;
+        }
+        h1 {
+            font-family: 'Comic Sans MS', 'Chalkboard', sans-serif;
+            color: #d32f2f;
+            text-shadow: 2px 2px 0 #1976d2;
+            text-align: center;
+        }
+        .dish {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #388e3c;
+            border-radius: 10px;
+            background: #fff;
+        }
+        .dish h2 {
+            color: #e91e63;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .dish img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .dish h3 {
+            color: #1976d2;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .dish p, .dish ul {
+            color: #1b5e20;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .dish ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: #e91e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #fbc02d;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Comida Tradicional de México</h1>
-        <div class="recipe-list">
-            <h2>Recetas Populares</h2>
-            <div class="recipe">
-                <h3>Tacos al Pastor</h3>
-                <p>Tacos hechos con carne de cerdo marinada, piña y tortilla de maíz.</p>
-            </div>
-            <div class="recipe">
-                <h3>Mole Poblano</h3>
-                <p>Salsa espesa de chocolate y chiles servida con pollo o pavo.</p>
-            </div>
+        <h1>Platos Típicos de México</h1>
+
+        <!-- Plato 1: Tacos al Pastor -->
+        <div class="dish">
+            <h2>Tacos al Pastor</h2>
+            <img src="https://example.com/tacos-al-pastor.jpg" alt="Tacos al Pastor">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de carne de cerdo (lomo o pierna)</li>
+                <li>3 chiles guajillo</li>
+                <li>2 chiles ancho</li>
+                <li>1/4 taza de jugo de piña</li>
+                <li>1/4 taza de vinagre blanco</li>
+                <li>1 cebolla</li>
+                <li>2 dientes de ajo</li>
+                <li>1 cucharadita de comino</li>
+                <li>1 cucharadita de orégano</li>
+                <li>1/4 taza de cilantro picado</li>
+                <li>1/4 taza de piña en trozos</li>
+                <li>Tortillas de maíz</li>
+                <li>Sal al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Remoja los chiles en agua caliente por 15 minutos, luego licúa con jugo de piña, vinagre, cebolla, ajo, comino, orégano y sal.<br>
+            2. Marina la carne en la mezcla por al menos 4 horas.<br>
+            3. Cocina la carne en una parrilla o sartén, cortándola en trozos pequeños.<br>
+            4. Calienta las tortillas y rellena con la carne, piña, cilantro y cebolla.<br>
+            5. Sirve con salsa verde o roja y limón.</p>
         </div>
-        <a href="/tradition-food/countries.html"><button class="start-button">Volver a Países</button></a>
+
+        <!-- Plato 2: Mole Poblano -->
+        <div class="dish">
+            <h2>Mole Poblano</h2>
+            <img src="https://example.com/mole-poblano.jpg" alt="Mole Poblano">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de pollo</li>
+                <li>4 chiles mulato</li>
+                <li>3 chiles ancho</li>
+                <li>2 chiles pasilla</li>
+                <li>1/4 taza de almendras</li>
+                <li>1/4 taza de pasas</li>
+                <li>1/4 taza de ajonjolí</li>
+                <li>1 tortilla de maíz frita</li>
+                <li>2 tomates asados</li>
+                <li>1 cebolla asada</li>
+                <li>2 dientes de ajo asados</li>
+                <li>1 tableta de chocolate mexicano</li>
+                <li>1 litro de caldo de pollo</li>
+                <li>1 cucharadita de canela</li>
+                <li>Sal al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina el pollo en agua con sal, reserva el caldo.<br>
+            2. Remoja los chiles en agua caliente, luego licúa con tomates, cebolla, ajo, almendras, pasas, ajonjolí, tortilla, canela y un poco de caldo.<br>
+            3. En una olla, sofríe la mezcla, agrega el caldo restante y el chocolate, y cocina a fuego bajo por 30 minutos.<br>
+            4. Añade el pollo y cocina por 15 minutos más.<br>
+            5. Sirve con arroz rojo y espolvorea con ajonjolí.</p>
+        </div>
+
+        <!-- Plato 3: Pozole -->
+        <div class="dish">
+            <h2>Pozole</h2>
+            <img src="https://example.com/pozole.jpg" alt="Pozole">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de maíz pozolero (cocido)</li>
+                <li>500 g de carne de cerdo (maciza)</li>
+                <li>3 chiles guajillo</li>
+                <li>1 cebolla</li>
+                <li>2 dientes de ajo</li>
+                <li>1/4 taza de rábanos en rodajas</li>
+                <li>1/4 taza de lechuga picada</li>
+                <li>1/4 taza de cebolla picada</li>
+                <li>1/4 taza de orégano seco</li>
+                <li>1 litro de caldo de cerdo</li>
+                <li>Jugo de 2 limones</li>
+                <li>Sal al gusto</li>
+                <li>Tostadas (para acompañar)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina la carne de cerdo con sal, reserva el caldo.<br>
+            2. Remoja los chiles en agua caliente, licúa con cebolla, ajo y un poco de caldo.<br>
+            3. En una olla, mezcla el maíz, la carne, el caldo y la salsa de chiles, y cocina por 30 minutos.<br>
+            4. Sirve caliente y decora con rábanos, lechuga, cebolla, orégano y jugo de limón.<br>
+            5. Acompaña con tostadas.</p>
+        </div>
+
+        <!-- Plato 4: Enchiladas -->
+        <div class="dish">
+            <h2>Enchiladas</h2>
+            <img src="https://example.com/enchiladas.jpg" alt="Enchiladas">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>12 tortillas de maíz</li>
+                <li>500 g de pollo desmenuzado</li>
+                <li>4 chiles guajillo</li>
+                <li>2 tomates</li>
+                <li>1 cebolla</li>
+                <li>2 dientes de ajo</li>
+                <li>1/2 taza de queso fresco rallado</li>
+                <li>1/4 taza de crema</li>
+                <li>1/4 taza de cebolla en rodajas</li>
+                <li>1 litro de caldo de pollo</li>
+                <li>Aceite para freír</li>
+                <li>Sal al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Remoja los chiles en agua caliente, licúa con tomates, cebolla, ajo y un poco de caldo.<br>
+            2. Sofríe la salsa en una sartén con un poco de aceite, ajusta el sabor con sal.<br>
+            3. Fríe ligeramente las tortillas en aceite y pásalas por la salsa.<br>
+            4. Rellena las tortillas con pollo, enrolla y coloca en un plato.<br>
+            5. Cubre con más salsa, crema, queso y cebolla, y sirve.</p>
+        </div>
+
+        <!-- Plato 5: Chiles en Nogada -->
+        <div class="dish">
+            <h2>Chiles en Nogada</h2>
+            <img src="https://example.com/chiles-en-nogada.jpg" alt="Chiles en Nogada">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>6 chiles poblanos</li>
+                <li>500 g de carne molida (mezcla de res y cerdo)</li>
+                <li>1/4 taza de pasas</li>
+                <li>1/4 taza de almendras picadas</li>
+                <li>1 manzana picada</li>
+                <li>1 pera picada</li>
+                <li>1 durazno picado</li>
+                <li>1/2 taza de nogada (crema de nuez de castilla con queso de cabra y leche)</li>
+                <li>1/4 taza de semillas de granada</li>
+                <li>1/4 taza de perejil picado</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Asa los chiles poblanos, pélalos y desvena.<br>
+            2. Sofríe la cebolla y ajo, agrega la carne, frutas, pasas, almendras, sal y pimienta, y cocina por 15 minutos.<br>
+            3. Rellena los chiles con la mezcla de carne.<br>
+            4. Cubre los chiles con la nogada y decora con granada y perejil.<br>
+            5. Sirve a temperatura ambiente, típico para las fiestas patrias.</p>
+        </div>
+
+        <!-- Plato 6: Tamales -->
+        <div class="dish">
+            <h2>Tamales</h2>
+            <img src="https://example.com/tamales.jpg" alt="Tamales">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de masa de maíz</li>
+                <li>500 g de pollo desmenuzado</li>
+                <li>4 chiles guajillo</li>
+                <li>2 tomates</li>
+                <li>1 cebolla</li>
+                <li>2 dientes de ajo</li>
+                <li>1/4 taza de manteca de cerdo</li>
+                <li>1 litro de caldo de pollo</li>
+                <li>Hojas de maíz para envolver</li>
+                <li>Sal al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Remoja los chiles en agua caliente, licúa con tomates, cebolla, ajo y un poco de caldo.<br>
+            2. Mezcla la masa con manteca, caldo y sal hasta que esté suave.<br>
+            3. En una hoja de maíz, coloca una porción de masa, agrega pollo y salsa, y envuelve.<br>
+            4. Cocina al vapor por 1-2 horas hasta que esté firme.<br>
+            5. Sirve caliente con salsa o crema si lo deseas.</p>
+        </div>
+
+        <!-- Plato 7: Cochinita Pibil -->
+        <div class="dish">
+            <h2>Cochinita Pibil</h2>
+            <img src="https://example.com/cochinita-pibil.jpg" alt="Cochinita Pibil">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de carne de cerdo (pierna o lomo)</li>
+                <li>100 g de pasta de achiote</li>
+                <li>1/2 taza de jugo de naranja agria</li>
+                <li>1/4 taza de vinagre blanco</li>
+                <li>1 cebolla morada (encurtida)</li>
+                <li>2 dientes de ajo</li>
+                <li>1 cucharadita de comino</li>
+                <li>1 cucharadita de orégano</li>
+                <li>Hojas de plátano para envolver</li>
+                <li>Tortillas de maíz</li>
+                <li>Sal al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Mezcla la pasta de achiote con jugo de naranja, vinagre, ajo, comino, orégano y sal.<br>
+            2. Marina la carne en la mezcla por al menos 4 horas.<br>
+            3. Envuelve la carne en hojas de plátano y cocina en el horno a 150°C por 3-4 horas.<br>
+            4. Desmenuza la carne y sirve en tortillas con cebolla encurtida.<br>
+            5. Acompaña con salsa habanera si lo deseas.</p>
+        </div>
+
+        <!-- Plato 8: Chilaquiles -->
+        <div class="dish">
+            <h2>Chilaquiles</h2>
+            <img src="https://example.com/chilaquiles.jpg" alt="Chilaquiles">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>12 tortillas de maíz (cortadas en triángulos)</li>
+                <li>4 chiles guajillo</li>
+                <li>2 tomates</li>
+                <li>1 cebolla</li>
+                <li>2 dientes de ajo</li>
+                <li>1/2 taza de queso fresco rallado</li>
+                <li>1/4 taza de crema</li>
+                <li>1/4 taza de cebolla en rodajas</li>
+                <li>1 aguacate en trozos</li>
+                <li>Aceite para freír</li>
+                <li>Sal al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Fríe las tortillas en aceite hasta que estén crujientes y escurre.<br>
+            2. Remoja los chiles en agua caliente, licúa con tomates, cebolla, ajo y sal.<br>
+            3. Sofríe la salsa en una sartén, agrega las tortillas fritas y mezcla bien.<br>
+            4. Sirve con crema, queso, cebolla y aguacate.<br>
+            5. Acompaña con frijoles refritos si lo deseas.</p>
+        </div>
+
+        <!-- Plato 9: Tostadas de Tinga -->
+        <div class="dish">
+            <h2>Tostadas de Tinga</h2>
+            <img src="https://example.com/tostadas-de-tinga.jpg" alt="Tostadas de Tinga">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de pollo desmenuzado</li>
+                <li>3 tomates</li>
+                <li>1 cebolla (mitad picada, mitad en rodajas)</li>
+                <li>2 chiles chipotle en adobo</li>
+                <li>2 dientes de ajo</li>
+                <li>6 tostadas de maíz</li>
+                <li>1/4 taza de lechuga picada</li>
+                <li>1/4 taza de queso fresco rallado</li>
+                <li>1/4 taza de crema</li>
+                <li>1 aguacate en trozos</li>
+                <li>Sal al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Licúa los tomates, cebolla picada, chiles chipotle y ajo con un poco de agua.<br>
+            2. Sofríe la salsa en una sartén, agrega el pollo desmenuzado y cocina por 15 minutos.<br>
+            3. Coloca una porción de tinga sobre cada tostada.<br>
+            4. Decora con lechuga, crema, queso, aguacate y cebolla en rodajas.<br>
+            5. Sirve inmediatamente.</p>
+        </div>
+
+        <!-- Plato 10: Flan Napolitano -->
+        <div class="dish">
+            <h2>Flan Napolitano</h2>
+            <img src="https://example.com/flan-napolitano.jpg" alt="Flan Napolitano">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 lata de leche condensada</li>
+                <li>1 lata de leche evaporada</li>
+                <li>5 huevos</li>
+                <li>1 cucharadita de esencia de vainilla</li>
+                <li>1/2 taza de queso crema</li>
+                <li>1/2 taza de azúcar (para el caramelo)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Derrite el azúcar en una sartén hasta formar un caramelo, vierte en un molde para flan.<br>
+            2. Licúa la leche condensada, leche evaporada, huevos, vainilla y queso crema hasta que esté suave.<br>
+            3. Vierte la mezcla en el molde con caramelo.<br>
+            4. Cocina a baño maría en el horno a 180°C por 1 hora, o hasta que esté firme.<br>
+            5. Deja enfriar, desmolda y sirve frío.</p>
+        </div>
+
+        <a href="/tradition-food/countries.html" class="back-button">Volver</a>
     </div>
 </body>
 </html>
