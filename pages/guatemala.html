@@ -3,24 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guatemala - Traditional Food</title>
+    <title>Platos Típicos de Guatemala</title>
     <link rel="stylesheet" href="/tradition-food/assets/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://example.com/latin-pattern-guatemala.jpg') repeat; /* Fondo con patrón guatemalteco */
+            background-color: #f4d03f; /* Amarillo como color de respaldo */
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para legibilidad */
+            border-radius: 10px;
+        }
+        h1 {
+            font-family: 'Comic Sans MS', 'Chalkboard', sans-serif;
+            color: #d32f2f;
+            text-shadow: 2px 2px 0 #1976d2;
+            text-align: center;
+        }
+        .dish {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #388e3c;
+            border-radius: 10px;
+            background: #fff;
+        }
+        .dish h2 {
+            color: #e91e63;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .dish img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .dish h3 {
+            color: #1976d2;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .dish p, .dish ul {
+            color: #1b5e20;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .dish ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: #e91e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #fbc02d;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Comida Tradicional de Guatemala</h1>
-        <div class="recipe-list">
-            <h2>Recetas Populares</h2>
-            <div class="recipe">
-                <h3>Kak'ik</h3>
-                <p>Sopa picante de pavo con chiles y especias, servida con tamalitos.</p>
-            </div>
-            <div class="recipe">
-                <h3>Pepian</h3>
-                <p>Guiso espeso de carne con semillas de calabaza y tomate.</p>
-            </div>
+        <h1>Platos Típicos de Guatemala</h1>
+
+        <!-- Plato 1: Kak’ik -->
+        <div class="dish">
+            <h2>Kak’ik</h2>
+            <img src="https://example.com/kakik.jpg" alt="Kak’ik">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 pavo pequeño (o 1 kg de pollo)</li>
+                <li>4 tomates asados</li>
+                <li>2 chiles guaque asados</li>
+                <li>1 cebolla asada</li>
+                <li>2 dientes de ajo asados</li>
+                <li>1/4 taza de miltomate (tomate verde)</li>
+                <li>1 litro de caldo de pollo</li>
+                <li>1 cucharadita de achiote</li>
+                <li>1/4 taza de cilantro picado</li>
+                <li>1/4 taza de hojas de samat (opcional)</li>
+                <li>Sal y pimienta al gusto</li>
+                <li>Tamales pequeños (para acompañar)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina el pavo o pollo en agua con sal por 1 hora, reserva el caldo.<br>
+            2. Licúa los tomates, chiles, cebolla, ajo y miltomate con un poco de caldo.<br>
+            3. En una olla, sofríe la mezcla con achiote, agrega el caldo y el pavo, y cocina por 30 minutos.<br>
+            4. Añade cilantro y hojas de samat, ajusta el sabor con sal y pimienta.<br>
+            5. Sirve caliente con tamales pequeños.</p>
         </div>
-        <a href="/tradition-food/countries.html"><button class="start-button">Volver a Países</button></a>
+
+        <!-- Plato 2: Pepián -->
+        <div class="dish">
+            <h2>Pepián</h2>
+            <img src="https://example.com/pepian.jpg" alt="Pepián">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de pollo (o carne de res)</li>
+                <li>4 tomates asados</li>
+                <li>2 chiles pasa asados</li>
+                <li>1/4 taza de semillas de calabaza tostadas</li>
+                <li>1/4 taza de ajonjolí tostado</li>
+                <li>1 cebolla asada</li>
+                <li>2 dientes de ajo asados</li>
+                <li>2 papas cortadas</li>
+                <li>1/4 taza de güisquil (chayote) en trozos</li>
+                <li>1 litro de caldo de pollo</li>
+                <li>1 cucharadita de canela</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina el pollo en agua con sal, reserva el caldo.<br>
+            2. Licúa los tomates, chiles, semillas de calabaza, ajonjolí, cebolla y ajo con un poco de caldo.<br>
+            3. En una olla, sofríe la mezcla, agrega el caldo, pollo, papas, güisquil y canela, y cocina por 30 minutos.<br>
+            4. Ajusta el sabor con sal y pimienta.<br>
+            5. Sirve caliente con arroz blanco y tortillas.</p>
+        </div>
+
+        <!-- Plato 3: Jocon -->
+        <div class="dish">
+            <h2>Jocón</h2>
+            <img src="https://example.com/jocon.jpg" alt="Jocón">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de pollo</li>
+                <li>1/2 kg de miltomate (tomate verde)</li>
+                <li>1/4 taza de cilantro picado</li>
+                <li>1/4 taza de cebollín picado</li>
+                <li>1 pimiento verde picado</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1 litro de caldo de pollo</li>
+                <li>1/4 taza de masa de maíz (para espesar)</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina el pollo en agua con sal, reserva el caldo.<br>
+            2. Licúa el miltomate, cilantro, cebollín, pimiento, cebolla y ajo con un poco de caldo.<br>
+            3. En una olla, sofríe la mezcla, agrega el caldo y el pollo, y cocina por 20 minutos.<br>
+            4. Disuelve la masa de maíz en un poco de agua, agrégala a la olla y cocina por 10 minutos más para espesar.<br>
+            5. Sirve caliente con arroz y tortillas.</p>
+        </div>
+
+        <!-- Plato 4: Tamales Colorados -->
+        <div class="dish">
+            <h2>Tamales Colorados</h2>
+            <img src="https://example.com/tamales-colorados.jpg" alt="Tamales Colorados">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de masa de maíz</li>
+                <li>500 g de pollo o cerdo</li>
+                <li>4 tomates</li>
+                <li>2 chiles guaque</li>
+                <li>1 cebolla</li>
+                <li>2 dientes de ajo</li>
+                <li>1/4 taza de aceitunas</li>
+                <li>1/4 taza de pasas</li>
+                <li>1 cucharadita de achiote</li>
+                <li>Hojas de plátano para envolver</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina el pollo con sal, desmenúzalo y reserva.<br>
+            2. Licúa los tomates, chiles, cebolla y ajo con achiote para hacer un recado.<br>
+            3. Mezcla la masa de maíz con el recado y un poco de caldo del pollo.<br>
+            4. En una hoja de plátano, coloca una porción de masa, agrega pollo, aceitunas y pasas, y envuelve.<br>
+            5. Cocina al vapor por 1-2 horas hasta que esté firme.</p>
+        </div>
+
+        <!-- Plato 5: Fiambre -->
+        <div class="dish">
+            <h2>Fiambre</h2>
+            <img src="https://example.com/fiambre.jpg" alt="Fiambre">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de embutidos variados (salchicha, chorizo, jamón)</li>
+                <li>200 g de pollo cocido y desmenuzado</li>
+                <li>200 g de carne de res cocida</li>
+                <li>1/4 kg de zanahorias cocidas</li>
+                <li>1/4 kg de ejotes cocidos</li>
+                <li>1/4 kg de coliflor cocida</li>
+                <li>1/4 taza de aceitunas</li>
+                <li>1/4 taza de alcaparras</li>
+                <li>1/2 taza de vinagre</li>
+                <li>1/4 taza de mostaza</li>
+                <li>1/4 taza de perejil picado</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina todas las carnes y verduras por separado.<br>
+            2. En un tazón grande, mezcla las carnes, embutidos y verduras con aceitunas y alcaparras.<br>
+            3. Prepara un aderezo con vinagre, mostaza, sal y pimienta, y vierte sobre la mezcla.<br>
+            4. Deja reposar en el refrigerador por 24 horas para que los sabores se integren.<br>
+            5. Sirve frío con perejil, típico para el Día de los Muertos.</p>
+        </div>
+
+        <!-- Plato 6: Rellenitos de Plátano -->
+        <div class="dish">
+            <h2>Rellenitos de Plátano</h2>
+            <img src="https://example.com/rellenitos-de-platano.jpg" alt="Rellenitos de Plátano">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>4 plátanos maduros</li>
+                <li>1/2 kg de frijoles negros cocidos y molidos</li>
+                <li>1/4 taza de azúcar</li>
+                <li>1 rama de canela</li>
+                <li>1/4 taza de chocolate en polvo (opcional)</li>
+                <li>Aceite para freír</li>
+                <li>Azúcar en polvo (para decorar)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina los plátanos en agua hasta que estén suaves, haz un puré y reserva.<br>
+            2. Cocina los frijoles con azúcar, canela y chocolate hasta que espese.<br>
+            3. Toma una porción de puré de plátano, aplana, agrega una cucharada de frijoles y forma una bola.<br>
+            4. Fríe en aceite caliente hasta que estén dorados, unos 3 minutos por lado.<br>
+            5. Escurre y espolvorea con azúcar en polvo.</p>
+        </div>
+
+        <!-- Plato 7: Hilachas -->
+        <div class="dish">
+            <h2>Hilachas</h2>
+            <img src="https://example.com/hilachas.jpg" alt="Hilachas">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de carne de res (falda)</li>
+                <li>4 tomates</li>
+                <li>1 cebolla</li>
+                <li>2 chiles guaque</li>
+                <li>2 dientes de ajo</li>
+                <li>2 papas cortadas</li>
+                <li>1/4 taza de zanahoria en tiras</li>
+                <li>1 litro de caldo de res</li>
+                <li>1 cucharadita de achiote</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina la carne en agua con sal hasta que esté tierna, unas 2 horas, desmenúzala y reserva el caldo.<br>
+            2. Licúa los tomates, cebolla, chiles y ajo con achiote.<br>
+            3. En una olla, sofríe la mezcla, agrega el caldo, la carne desmenuzada, papas y zanahoria.<br>
+            4. Cocina por 20 minutos hasta que las verduras estén tiernas.<br>
+            5. Sirve con arroz y tortillas.</p>
+        </div>
+
+        <!-- Plato 8: Chuchitos -->
+        <div class="dish">
+            <h2>Chuchitos</h2>
+            <img src="https://example.com/chuchitos.jpg" alt="Chuchitos">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de masa de maíz</li>
+                <li>500 g de pollo</li>
+                <li>4 tomates</li>
+                <li>1 cebolla</li>
+                <li>2 chiles pimientos</li>
+                <li>2 dientes de ajo</li>
+                <li>1 cucharadita de achiote</li>
+                <li>Hojas de maíz para envolver</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina el pollo con sal, desmenúzalo y reserva.<br>
+            2. Licúa los tomates, cebolla, chiles y ajo con achiote para hacer un recado.<br>
+            3. Mezcla la masa de maíz con un poco de recado y caldo del pollo.<br>
+            4. En una hoja de maíz, coloca una porción de masa, agrega pollo y un poco de recado, y envuelve.<br>
+            5. Cocina al vapor por 1 hora hasta que esté firme.</p>
+        </div>
+
+        <!-- Plato 9: Subanik -->
+        <div class="dish">
+            <h2>Subanik</h2>
+            <img src="https://example.com/subanik.jpg" alt="Subanik">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de pollo</li>
+                <li>500 g de carne de res</li>
+                <li>4 tomates asados</li>
+                <li>2 chiles guaque asados</li>
+                <li>1 cebolla asada</li>
+                <li>2 dientes de ajo asados</li>
+                <li>1/4 taza de miltomate</li>
+                <li>1 litro de caldo de pollo</li>
+                <li>Hojas de plátano para envolver</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina las carnes en agua con sal, desmenúzalas y reserva el caldo.<br>
+            2. Licúa los tomates, chiles, cebolla, ajo y miltomate con un poco de caldo.<br>
+            3. Mezcla las carnes con el recado.<br>
+            4. Coloca la mezcla en hojas de plátano, envuelve y cocina al vapor por 1 hora.<br>
+            5. Sirve caliente con tortillas.</p>
+        </div>
+
+        <!-- Plato 10: Atol de Elote -->
+        <div class="dish">
+            <h2>Atol de Elote</h2>
+            <img src="https://example.com/atol-de-elote.jpg" alt="Atol de Elote">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>6 mazorcas de maíz frescas (desgranadas)</li>
+                <li>1 litro de leche</li>
+                <li>1/2 taza de azúcar</li>
+                <li>1 rama de canela</li>
+                <li>1 cucharadita de sal</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Licúa el maíz con un poco de agua hasta obtener una pasta suave.<br>
+            2. Cuela la mezcla para obtener el líquido y desecha los sólidos.<br>
+            3. En una olla, mezcla el líquido de maíz con la leche, azúcar, canela y sal, y cocina a fuego medio, revolviendo constantemente, hasta que espese, unos 20 minutos.<br>
+            4. Ajusta el dulzor según tu gusto.<br>
+            5. Sirve caliente en tazas.</p>
+        </div>
+
+        <a href="/tradition-food/countries.html" class="back-button">Volver</a>
     </div>
 </body>
 </html>
