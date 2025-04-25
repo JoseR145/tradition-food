@@ -10,78 +10,72 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #ff6f61, #f4d03f); /* Degradado rojo-naranja a amarillo */
-            color: #333;
+            background: #f4d03f; /* Amarillo de fondo */
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
             text-align: center;
+            position: relative;
+            z-index: 1;
         }
         h1 {
-            font-family: 'Georgia', serif; /* Fuente más decorativa para el título */
-            font-size: 48px;
+            font-family: 'Comic Sans MS', 'Chalkboard', sans-serif; /* Fuente divertida */
+            font-size: 60px;
             color: #d32f2f; /* Rojo vibrante */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 20px;
-            color: #1b5e20; /* Verde oscuro */
+            text-shadow: 3px 3px 0 #1976d2, 6px 6px 0 #388e3c; /* Sombras azul y verde */
             margin-bottom: 40px;
         }
-        .country-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px; /* Más espacio entre botones */
-        }
-        .country-button {
-            padding: 15px 30px; /* Botones más grandes */
-            background-color: #1976d2; /* Azul vibrante */
+        .start-button {
+            padding: 20px 40px;
+            background-color: #e91e63; /* Rosa */
             color: white;
             text-decoration: none;
-            border-radius: 8px;
-            font-size: 20px; /* Texto más grande */
+            border-radius: 10px;
+            font-size: 24px;
             transition: transform 0.2s, background-color 0.3s;
+            display: inline-block;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
-        .country-button:nth-child(odd) {
-            background-color: #d81b60; /* Rosa/magenta para botones impares */
+        .start-button:hover {
+            transform: scale(1.1);
+            background-color: #fbc02d; /* Amarillo al hover */
         }
-        .country-button:nth-child(even) {
-            background-color: #388e3c; /* Verde para botones pares */
+        /* Formas decorativas de fondo */
+        .background-shapes::before,
+        .background-shapes::after {
+            content: '';
+            position: absolute;
+            z-index: 0;
         }
-        .country-button:hover {
-            transform: scale(1.05); /* Efecto de agrandamiento al pasar el cursor */
-            background-color: #fbc02d; /* Amarillo al hacer hover */
+        .background-shapes::before {
+            width: 150px;
+            height: 150px;
+            background: #1976d2; /* Azul */
+            clip-path: circle(50%);
+            top: 10%;
+            left: 10%;
+            opacity: 0.7;
+        }
+        .background-shapes::after {
+            width: 100px;
+            height: 100px;
+            background: #388e3c; /* Verde */
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            bottom: 15%;
+            right: 15%;
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
+    <div class="background-shapes"></div>
     <div class="container">
-        <h1>Traditional Food - América Latina</h1>
-        <p>Explora los platos típicos de los países de América Latina. Selecciona un país para aprender más.</p>
-        <div class="country-list">
-            <a href="/tradition-food/pages/argentina.html" class="country-button">Argentina</a>
-            <a href="/tradition-food/pages/bolivia.html" class="country-button">Bolivia</a>
-            <a href="/tradition-food/pages/brasil.html" class="country-button">Brasil</a>
-            <a href="/tradition-food/pages/chile.html" class="country-button">Chile</a>
-            <a href="/tradition-food/pages/colombia.html" class="country-button">Colombia</a>
-            <a href="/tradition-food/pages/costa_rica.html" class="country-button">Costa Rica</a>
-            <a href="/tradition-food/pages/ecuador.html" class="country-button">Ecuador</a>
-            <a href="/tradition-food/pages/el_salvador.html" class="country-button">El Salvador</a>
-            <a href="/tradition-food/pages/guatemala.html" class="country-button">Guatemala</a>
-            <a href="/tradition-food/pages/honduras.html" class="country-button">Honduras</a>
-            <a href="/tradition-food/pages/mexico.html" class="country-button">México</a>
-            <a href="/tradition-food/pages/nicaragua.html" class="country-button">Nicaragua</a>
-            <a href="/tradition-food/pages/panama.html" class="country-button">Panamá</a>
-            <a href="/tradition-food/pages/paraguay.html" class="country-button">Paraguay</a>
-            <a href="/tradition-food/pages/peru.html" class="country-button">Perú</a>
-            <a href="/tradition-food/pages/uruguay.html" class="country-button">Uruguay</a>
-            <a href="/tradition-food/pages/venezuela.html" class="country-button">Venezuela</a>
-        </div>
+        <h1>Traditional Food</h1>
+        <a href="/tradition-food/countries.html" class="start-button">Comenzar</a>
     </div>
 </body>
 </html>
