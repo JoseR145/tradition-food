@@ -3,14 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traditional Food</title>
+    <title>Traditional Food - América Latina</title>
     <link rel="stylesheet" href="/tradition-food/assets/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff6f61, #f4d03f); /* Degradado rojo-naranja a amarillo */
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Georgia', serif; /* Fuente más decorativa para el título */
+            font-size: 48px;
+            color: #d32f2f; /* Rojo vibrante */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            color: #1b5e20; /* Verde oscuro */
+            margin-bottom: 40px;
+        }
+        .country-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Más espacio entre botones */
+        }
+        .country-button {
+            padding: 15px 30px; /* Botones más grandes */
+            background-color: #1976d2; /* Azul vibrante */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 20px; /* Texto más grande */
+            transition: transform 0.2s, background-color 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .country-button:nth-child(odd) {
+            background-color: #d81b60; /* Rosa/magenta para botones impares */
+        }
+        .country-button:nth-child(even) {
+            background-color: #388e3c; /* Verde para botones pares */
+        }
+        .country-button:hover {
+            transform: scale(1.05); /* Efecto de agrandamiento al pasar el cursor */
+            background-color: #fbc02d; /* Amarillo al hacer hover */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Traditional Food</h1>
-        <p>Explora las recetas tradicionales de América Latina</p>
-        <a href="/tradition-food/countries.html"><button class="start-button">Comenzar</button></a>
+        <h1>Traditional Food - América Latina</h1>
+        <p>Explora los platos típicos de los países de América Latina. Selecciona un país para aprender más.</p>
+        <div class="country-list">
+            <a href="/tradition-food/pages/argentina.html" class="country-button">Argentina</a>
+            <a href="/tradition-food/pages/bolivia.html" class="country-button">Bolivia</a>
+            <a href="/tradition-food/pages/brasil.html" class="country-button">Brasil</a>
+            <a href="/tradition-food/pages/chile.html" class="country-button">Chile</a>
+            <a href="/tradition-food/pages/colombia.html" class="country-button">Colombia</a>
+            <a href="/tradition-food/pages/costa_rica.html" class="country-button">Costa Rica</a>
+            <a href="/tradition-food/pages/ecuador.html" class="country-button">Ecuador</a>
+            <a href="/tradition-food/pages/el_salvador.html" class="country-button">El Salvador</a>
+            <a href="/tradition-food/pages/guatemala.html" class="country-button">Guatemala</a>
+            <a href="/tradition-food/pages/honduras.html" class="country-button">Honduras</a>
+            <a href="/tradition-food/pages/mexico.html" class="country-button">México</a>
+            <a href="/tradition-food/pages/nicaragua.html" class="country-button">Nicaragua</a>
+            <a href="/tradition-food/pages/panama.html" class="country-button">Panamá</a>
+            <a href="/tradition-food/pages/paraguay.html" class="country-button">Paraguay</a>
+            <a href="/tradition-food/pages/peru.html" class="country-button">Perú</a>
+            <a href="/tradition-food/pages/uruguay.html" class="country-button">Uruguay</a>
+            <a href="/tradition-food/pages/venezuela.html" class="country-button">Venezuela</a>
+        </div>
     </div>
 </body>
 </html>
