@@ -3,24 +3,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Costa Rica - Traditional Food</title>
+    <title>Platos Típicos de Costa Rica</title>
     <link rel="stylesheet" href="/tradition-food/assets/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://example.com/latin-pattern-costa-rica.jpg') repeat; /* Fondo con patrón costarricense */
+            background-color: #f4d03f; /* Amarillo como color de respaldo */
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para legibilidad */
+            border-radius: 10px;
+        }
+        h1 {
+            font-family: 'Comic Sans MS', 'Chalkboard', sans-serif;
+            color: #d32f2f;
+            text-shadow: 2px 2px 0 #1976d2;
+            text-align: center;
+        }
+        .dish {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #388e3c;
+            border-radius: 10px;
+            background: #fff;
+        }
+        .dish h2 {
+            color: #e91e63;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .dish img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .dish h3 {
+            color: #1976d2;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .dish p, .dish ul {
+            color: #1b5e20;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .dish ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: #e91e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #fbc02d;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Comida Tradicional de Costa Rica</h1>
-        <div class="recipe-list">
-            <h2>Recetas Populares</h2>
-            <div class="recipe">
-                <h3>Gallo Pinto</h3>
-                <p>Arroz y frijoles mezclados, servidos con huevos y plátano frito.</p>
-            </div>
-            <div class="recipe">
-                <h3>Casado</h3>
-                <p>Plato con arroz, frijoles, carne, plátano frito y ensalada.</p>
-            </div>
+        <h1>Platos Típicos de Costa Rica</h1>
+
+        <!-- Plato 1: Gallo Pinto -->
+        <div class="dish">
+            <h2>Gallo Pinto</h2>
+            <img src="https://example.com/gallo-pinto.jpg" alt="Gallo Pinto">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>2 tazas de arroz cocido</li>
+                <li>1 taza de frijoles negros o rojos cocidos</li>
+                <li>1/2 cebolla picada</li>
+                <li>1/2 pimiento rojo picado</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1/4 taza de cilantro picado</li>
+                <li>2 cucharadas de Salsa Lizano (o salsa inglesa)</li>
+                <li>2 cucharadas de aceite</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. En una sartén, calienta el aceite y sofríe la cebolla, pimiento y ajo hasta que estén suaves.<br>
+            2. Agrega los frijoles cocidos con un poco de su caldo y la Salsa Lizano, y cocina por 5 minutos.<br>
+            3. Incorpora el arroz cocido, mezcla bien y cocina por 5 minutos más.<br>
+            4. Añade cilantro, sal y pimienta al gusto.<br>
+            5. Sirve caliente, ideal para el desayuno con huevos fritos o aguacate.</p>
         </div>
-        <a href="/tradition-food/countries.html"><button class="start-button">Volver a Países</button></a>
+
+        <!-- Plato 2: Casado -->
+        <div class="dish">
+            <h2>Casado</h2>
+            <img src="https://example.com/casado.jpg" alt="Casado">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 taza de arroz cocido</li>
+                <li>1 taza de frijoles negros cocidos</li>
+                <li>200 g de carne de res, pollo o pescado</li>
+                <li>1 plátano maduro frito</li>
+                <li>1 huevo frito</li>
+                <li>1/4 de repollo rallado (ensalada)</li>
+                <li>1 tomate en rodajas</li>
+                <li>1/4 taza de picadillo de papa</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina la carne (o pollo/pescado) a la plancha con sal y pimienta.<br>
+            2. Fríe el plátano maduro en rodajas hasta que esté dorado.<br>
+            3. Prepara el picadillo de papa: sofríe papas cocidas y picadas con cebolla y pimientos.<br>
+            4. En un plato, sirve una porción de arroz, frijoles, carne, plátano, huevo frito, ensalada de repollo y tomate.<br>
+            5. Acompaña con picadillo y, si lo deseas, Salsa Lizano.</p>
+        </div>
+
+        <!-- Plato 3: Olla de Carne -->
+        <div class="dish">
+            <h2>Olla de Carne</h2>
+            <img src="https://example.com/olla-de-carne.jpg" alt="Olla de Carne">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de carne de res (costilla o falda)</li>
+                <li>2 papas cortadas</li>
+                <li>1 yuca cortada</li>
+                <li>1 camote cortado</li>
+                <li>1 mazorca de maíz cortada</li>
+                <li>1/4 kg de ñame</li>
+                <li>1 zanahoria cortada</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1/4 taza de cilantro picado</li>
+                <li>1 litro de caldo de carne</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. En una olla, sofríe la cebolla y el ajo, agrega la carne y dora.<br>
+            2. Añade el caldo, papas, yuca, camote, maíz, ñame, zanahoria, sal y pimienta.<br>
+            3. Cocina a fuego medio por 1 hora hasta que las verduras y la carne estén tiernas.<br>
+            4. Agrega el cilantro y ajusta el sabor.<br>
+            5. Sirve caliente con arroz blanco.</p>
+        </div>
+
+        <!-- Plato 4: Tamal Costarricense -->
+        <div class="dish">
+            <h2>Tamal Costarricense</h2>
+            <img src="https://example.com/tamal-costarricense.jpg" alt="Tamal Costarricense">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de harina de maíz</li>
+                <li>500 g de carne de cerdo</li>
+                <li>2 papas cortadas</li>
+                <li>1 zanahoria cortada</li>
+                <li>1/4 taza de arvejas</li>
+                <li>1/4 taza de arroz cocido</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1 pimiento rojo picado</li>
+                <li>Hojas de plátano para envolver</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina la carne de cerdo con sal, desmenúzala y sofríe con cebolla, ajo y pimiento.<br>
+            2. Prepara la masa de maíz con agua, sal y un poco de caldo de cerdo.<br>
+            3. En una hoja de plátano, coloca una capa de masa, agrega carne, papas, zanahoria, arvejas y arroz.<br>
+            4. Envuelve y amarra bien.<br>
+            5. Cocina al vapor por 1-2 horas hasta que esté firme.</p>
+        </div>
+
+        <!-- Plato 5: Ceviche Costarricense -->
+        <div class="dish">
+            <h2>Ceviche Costarricense</h2>
+            <img src="https://example.com/ceviche-costarricense.jpg" alt="Ceviche Costarricense">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de pescado blanco (corvina o tilapia)</li>
+                <li>1/2 taza de jugo de limón</li>
+                <li>1 cebolla picada</li>
+                <li>1 pimiento rojo picado</li>
+                <li>1/4 taza de cilantro picado</li>
+                <li>1/4 taza de salsa de tomate</li>
+                <li>1 cucharadita de Salsa Lizano</li>
+                <li>Sal y pimienta al gusto</li>
+                <li>Galletas saladas (para acompañar)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Corta el pescado en cubos pequeños y marínalo con el jugo de limón por 30 minutos.<br>
+            2. En un tazón, mezcla el pescado con la cebolla, pimiento, cilantro, salsa de tomate y Salsa Lizano.<br>
+            3. Sazona con sal y pimienta al gusto.<br>
+            4. Deja reposar en el refrigerador por 15 minutos más.<br>
+            5. Sirve frío con galletas saladas.</p>
+        </div>
+
+        <!-- Plato 6: Chifrijo -->
+        <div class="dish">
+            <h2>Chifrijo</h2>
+            <img src="https://example.com/chifrijo.jpg" alt="Chifrijo">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 taza de frijoles rojos cocidos</li>
+                <li>200 g de chicharrón</li>
+                <li>1 taza de arroz blanco cocido</li>
+                <li>1 tomate picado</li>
+                <li>1/2 cebolla picada</li>
+                <li>1/4 taza de cilantro picado</li>
+                <li>1 aguacate en cubos</li>
+                <li>Jugo de 1 limón</li>
+                <li>Sal y pimienta al gusto</li>
+                <li>Tortillas fritas (para acompañar)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Fríe el chicharrón hasta que esté crujiente y córtalo en trozos pequeños.<br>
+            2. Prepara un pico de gallo mezclando el tomate, cebolla, cilantro, jugo de limón, sal y pimienta.<br>
+            3. En un tazón, coloca una capa de frijoles, seguida de arroz, chicharrón, pico de gallo y aguacate.<br>
+            4. Sirve con tortillas fritas al lado.<br>
+            5. Ideal como aperitivo o plato principal.</p>
+        </div>
+
+        <!-- Plato 7: Sopa Negra -->
+        <div class="dish">
+            <h2>Sopa Negra</h2>
+            <img src="https://example.com/sopa-negra.jpg" alt="Sopa Negra">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1/2 kg de frijoles negros</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1 pimiento rojo picado</li>
+                <li>1/4 taza de cilantro picado</li>
+                <li>2 huevos duros</li>
+                <li>1 litro de caldo de pollo</li>
+                <li>1 cucharadita de comino</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina los frijoles en agua con sal hasta que estén tiernos, unas 2 horas.<br>
+            2. En una olla, sofríe la cebolla, ajo y pimiento, agrega los frijoles con su caldo, el caldo de pollo, comino, sal y pimienta.<br>
+            3. Cocina por 30 minutos más a fuego bajo.<br>
+            4. Licúa una parte de la sopa para espesarla y regresa a la olla.<br>
+            5. Sirve caliente con un huevo duro y cilantro.</p>
+        </div>
+
+        <!-- Plato 8: Picadillo de Arracache -->
+        <div class="dish">
+            <h2>Picadillo de Arracache</h2>
+            <img src="https://example.com/picadillo-de-arracache.jpg" alt="Picadillo de Arracache">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de arracache (arracacha) pelado y rallado</li>
+                <li>1/2 cebolla picada</li>
+                <li>1/2 pimiento rojo picado</li>
+                <li>2 dientes de ajo picados</li>
+                <li>200 g de carne molida (opcional)</li>
+                <li>1/4 taza de cilantro picado</li>
+                <li>2 cucharadas de aceite</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. En una sartén, calienta el aceite y sofríe la cebolla, pimiento y ajo.<br>
+            2. Si usas carne, agrégala y cocina hasta que esté dorada.<br>
+            3. Añade el arracache rallado, sal y pimienta, y cocina por 10-15 minutos hasta que esté tierno.<br>
+            4. Agrega el cilantro y mezcla bien.<br>
+            5. Sirve como acompañamiento o dentro de un casado.</p>
+        </div>
+
+        <!-- Plato 9: Chorreadas -->
+        <div class="dish">
+            <h2>Chorreadas</h2>
+            <img src="https://example.com/chorreadas.jpg" alt="Chorreadas">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>4 mazorcas de maíz frescas (desgranadas)</li>
+                <li>1/2 taza de leche</li>
+                <li>1/4 taza de azúcar</li>
+                <li>1/4 taza de queso fresco rallado</li>
+                <li>1 huevo</li>
+                <li>Mantequilla para cocinar</li>
+                <li>Sal al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Licúa el maíz con la leche hasta obtener una mezcla suave.<br>
+            2. Mezcla la pasta de maíz con el azúcar, queso, huevo y una pizca de sal.<br>
+            3. En una sartén con mantequilla, vierte porciones de la mezcla como si fueran panqueques.<br>
+            4. Cocina a fuego medio, unos 3-4 minutos por lado, hasta que estén doradas.<br>
+            5. Sirve caliente con natilla o queso fresco.</p>
+        </div>
+
+        <!-- Plato 10: Patacones -->
+        <div class="dish">
+            <h2>Patacones</h2>
+            <img src="https://example.com/patacones.jpg" alt="Patacones">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>2 plátanos verdes</li>
+                <li>Aceite para freír</li>
+                <li>Sal al gusto</li>
+                <li>1/4 taza de frijoles molidos (para acompañar)</li>
+                <li>1/4 taza de queso fresco rallado</li>
+                <li>1/4 taza de pico de gallo (tomate, cebolla, cilantro)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Pela los plátanos verdes y córtalos en trozos de 5 cm.<br>
+            2. Fríe los trozos en aceite caliente hasta que estén ligeramente dorados, unos 2 minutos por lado.<br>
+            3. Retira, aplasta cada trozo con una tabla o pataconera para formar discos, y fríe nuevamente hasta que estén crujientes.<br>
+            4. Escurre y sazona con sal.<br>
+            5. Sirve con frijoles molidos, queso y pico de gallo encima.</p>
+        </div>
+
+        <a href="/tradition-food/countries.html" class="back-button">Volver</a>
     </div>
 </body>
 </html>
