@@ -3,24 +3,338 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bolivia - Traditional Food</title>
+    <title>Platos Típicos de Bolivia</title>
     <link rel="stylesheet" href="/tradition-food/assets/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://example.com/latin-pattern-bolivia.jpg') repeat; /* Fondo con patrón boliviano */
+            background-color: #f4d03f; /* Amarillo como color de respaldo */
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para legibilidad */
+            border-radius: 10px;
+        }
+        h1 {
+            font-family: 'Comic Sans MS', 'Chalkboard', sans-serif;
+            color: #d32f2f;
+            text-shadow: 2px 2px 0 #1976d2;
+            text-align: center;
+        }
+        .dish {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #388e3c;
+            border-radius: 10px;
+            background: #fff;
+        }
+        .dish h2 {
+            color: #e91e63;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .dish img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .dish h3 {
+            color: #1976d2;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .dish p, .dish ul {
+            color: #1b5e20;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .dish ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: #e91e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #fbc02d;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Comida Tradicional de Bolivia</h1>
-        <div class="recipe-list">
-            <h2>Recetas Populares</h2>
-            <div class="recipe">
-                <h3>Salteñas</h3>
-                <p>Empanadas jugosas rellenas de carne, pollo, papas y huevo, con un toque picante.</p>
-            </div>
-            <div class="recipe">
-                <h3>Sopa de Maní</h3>
-                <p>Sopa espesa de maní con papas, carne y verduras.</p>
-            </div>
+        <h1>Platos Típicos de Bolivia</h1>
+
+        <!-- Plato 1: Salteñas -->
+        <div class="dish">
+            <h2>Salteñas</h2>
+            <img src="https://example.com/saltenas.jpg" alt="Salteñas">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de harina de trigo</li>
+                <li>100 g de manteca</li>
+                <li>1/2 taza de agua tibia</li>
+                <li>1 cucharadita de azúcar</li>
+                <li>500 g de carne de pollo o res (deshebrada)</li>
+                <li>2 papas cocidas y picadas</li>
+                <li>1 cebolla picada</li>
+                <li>1/4 taza de arvejas cocidas</li>
+                <li>2 huevos duros picados</li>
+                <li>1 cucharadita de comino</li>
+                <li>1 cucharadita de ají amarillo molido</li>
+                <li>1/2 taza de caldo de carne</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Para la masa, mezcla la harina, manteca, azúcar y agua con sal hasta formar una masa suave. Deja reposar 30 minutos.<br>
+            2. En una sartén, sofríe la cebolla, luego agrega la carne, comino, ají amarillo, sal y pimienta. Cocina hasta que la carne esté lista.<br>
+            3. Añade las papas, arvejas, huevos duros y caldo, y cocina hasta que espese. Deja enfriar.<br>
+            4. Estira la masa, corta círculos, coloca el relleno en el centro, dobla y sella con un repulgue.<br>
+            5. Hornea a 200°C por 20-25 minutos hasta que estén doradas.</p>
         </div>
-        <a href="/tradition-food/countries.html"><button class="start-button">Volver a Países</button></a>
+
+        <!-- Plato 2: Sopa de Maní -->
+        <div class="dish">
+            <h2>Sopa de Maní</h2>
+            <img src="https://example.com/sopa-de-mani.jpg" alt="Sopa de Maní">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1/2 kg de maní crudo</li>
+                <li>500 g de carne de res (costilla o maciza)</li>
+                <li>2 papas cortadas en cubos</li>
+                <li>1 zanahoria cortada en cubos</li>
+                <li>1/4 taza de arvejas</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1 cucharadita de comino</li>
+                <li>1 litro de caldo de carne</li>
+                <li>Aceite para freír</li>
+                <li>Sal y pimienta al gusto</li>
+                <li>Perejil picado para decorar</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Tosta el maní en una sartén, luego muélelo hasta obtener una pasta fina.<br>
+            2. En una olla, sofríe la cebolla y el ajo, agrega la carne y dora.<br>
+            3. Añade el caldo, las papas, zanahoria, arvejas, comino, sal y pimienta, y cocina por 30 minutos.<br>
+            4. Incorpora la pasta de maní y cocina a fuego bajo por 15 minutos más, revolviendo para que no se pegue.<br>
+            5. Sirve caliente, decorado con perejil y acompañado de papas fritas.</p>
+        </div>
+
+        <!-- Plato 3: Pique Macho -->
+        <div class="dish">
+            <h2>Pique Macho</h2>
+            <img src="https://example.com/pique-macho.jpg" alt="Pique Macho">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de carne de res cortada en cubos</li>
+                <li>2 chorizos criollos en rodajas</li>
+                <li>4 papas fritas en bastones</li>
+                <li>2 tomates en rodajas</li>
+                <li>1 cebolla en rodajas</li>
+                <li>2 locotos (o chiles) picados</li>
+                <li>2 huevos duros en rodajas</li>
+                <li>1 cucharadita de comino</li>
+                <li>1/4 taza de cerveza (opcional)</li>
+                <li>Aceite para freír</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Fríe las papas en aceite caliente hasta que estén doradas y crujientes, y reserva.<br>
+            2. En una sartén, sofríe la carne con comino, sal y pimienta hasta que esté dorada.<br>
+            3. Agrega los chorizos y la cerveza (si la usas), y cocina por 5 minutos más.<br>
+            4. En un plato, coloca una capa de papas fritas, cubre con la carne y los chorizos, y decora con tomate, cebolla, locoto y huevo duro.<br>
+            5. Sirve caliente, opcionalmente con mayonesa o kétchup.</p>
+        </div>
+
+        <!-- Plato 4: Silpancho -->
+        <div class="dish">
+            <h2>Silpancho</h2>
+            <img src="https://example.com/silpancho.jpg" alt="Silpancho">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de carne de res (filete delgado)</li>
+                <li>1 taza de pan rallado</li>
+                <li>2 huevos (para apanar)</li>
+                <li>2 papas cocidas y cortadas en rodajas</li>
+                <li>1 taza de arroz cocido</li>
+                <li>2 tomates en rodajas</li>
+                <li>1 cebolla en rodajas</li>
+                <li>2 huevos fritos</li>
+                <li>1 locoto picado (opcional)</li>
+                <li>Aceite para freír</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Sazona la carne con sal y pimienta, pásala por huevo batido y pan rallado.<br>
+            2. Fríe la carne en aceite caliente hasta que esté dorada por ambos lados.<br>
+            3. En un plato, coloca una capa de arroz, seguido de papas cocidas.<br>
+            4. Coloca la carne apanada encima y cubre con un huevo frito.<br>
+            5. Decora con tomate, cebolla y locoto. Sirve caliente.</p>
+        </div>
+
+        <!-- Plato 5: Majadito -->
+        <div class="dish">
+            <h2>Majadito</h2>
+            <img src="https://example.com/majadito.jpg" alt="Majadito">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de charque (carne seca) o carne de res</li>
+                <li>2 tazas de arroz</li>
+                <li>1 cebolla picada</li>
+                <li>1 pimiento rojo picado</li>
+                <li>2 tomates picados</li>
+                <li>1 cucharadita de comino</li>
+                <li>1/2 cucharadita de azafrán o colorante</li>
+                <li>3 tazas de agua o caldo</li>
+                <li>2 plátanos fritos (para acompañar)</li>
+                <li>2 huevos fritos (para acompañar)</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Si usas charque, remójalo por unas horas, luego hiérvelo y desmenúzalo.<br>
+            2. En una olla, sofríe la cebolla, pimiento y tomate, agrega el charque o carne, comino, azafrán, sal y pimienta.<br>
+            3. Añade el arroz y el agua o caldo, y cocina a fuego bajo hasta que el arroz esté listo, unos 20 minutos.<br>
+            4. Fríe los plátanos y los huevos por separado.<br>
+            5. Sirve el majadito acompañado de plátano frito y huevo frito.</p>
+        </div>
+
+        <!-- Plato 6: Fricase -->
+        <div class="dish">
+            <h2>Fricase</h2>
+            <img src="https://example.com/fricase.jpg" alt="Fricase">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de carne de cerdo (costilla o maciza)</li>
+                <li>1/2 kg de chuño (papa deshidratada)</li>
+                <li>2 cebollas picadas</li>
+                <li>3 dientes de ajo picados</li>
+                <li>1 cucharada de ají amarillo molido</li>
+                <li>1 cucharadita de comino</li>
+                <li>1 litro de caldo de carne</li>
+                <li>2 papas cocidas y cortadas</li>
+                <li>1/4 taza de perejil picado</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Remoja el chuño en agua durante unas horas, luego hiérvelo hasta que esté tierno.<br>
+            2. En una olla, sofríe la cebolla y el ajo, agrega la carne, ají amarillo, comino, sal y pimienta, y dora.<br>
+            3. Añade el caldo y cocina a fuego lento por 1 hora hasta que la carne esté suave.<br>
+            4. Incorpora el chuño y las papas, y cocina por 15 minutos más.<br>
+            5. Sirve caliente, decorado con perejil.</p>
+        </div>
+
+        <!-- Plato 7: Humintas -->
+        <div class="dish">
+            <h2>Humintas</h2>
+            <img src="https://example.com/humintas.jpg" alt="Humintas">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>6 mazorcas de maíz frescas (desgranadas)</li>
+                <li>200 g de queso fresco rallado</li>
+                <li>100 g de manteca</li>
+                <li>1 cucharadita de polvo para hornear</li>
+                <li>1/2 taza de azúcar</li>
+                <li>1/2 cucharadita de canela</li>
+                <li>Hojas de maíz para envolver</li>
+                <li>Sal al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Muele los granos de maíz hasta obtener una masa.<br>
+            2. Mezcla la masa de maíz con el queso, manteca, polvo para hornear, azúcar, canela y sal.<br>
+            3. Coloca una porción de la mezcla en una hoja de maíz, dobla y amarra.<br>
+            4. Cocina al vapor durante 1 hora o hasta que estén firmes.<br>
+            5. Sirve caliente, opcionalmente con café o té.</p>
+        </div>
+
+        <!-- Plato 8: Anticuchos -->
+        <div class="dish">
+            <h2>Anticuchos</h2>
+            <img src="https://example.com/anticuchos.jpg" alt="Anticuchos">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de corazón de res cortado en cubos</li>
+                <li>1/4 taza de vinagre rojo</li>
+                <li>1 cucharada de ají panca molido</li>
+                <li>1 cucharadita de comino</li>
+                <li>2 dientes de ajo picados</li>
+                <li>2 papas cocidas y cortadas</li>
+                <li>Palitos de brocheta</li>
+                <li>Aceite para freír</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Marina el corazón de res con vinagre, ají panca, comino, ajo, sal y pimienta por 2 horas.<br>
+            2. Ensarta los cubos de corazón en los palitos de brocheta.<br>
+            3. Cocina las brochetas en una parrilla o sartén con aceite hasta que estén doradas, unos 5 minutos por lado.<br>
+            4. Sirve con papas cocidas y salsa de ají si lo deseas.</p>
+        </div>
+
+        <!-- Plato 9: Chairo -->
+        <div class="dish">
+            <h2>Chairo</h2>
+            <img src="https://example.com/chairo.jpg" alt="Chairo">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1/2 kg de chuño (papa deshidratada)</li>
+                <li>500 g de carne de cordero o res</li>
+                <li>1/4 kg de trigo pelado</li>
+                <li>2 papas cortadas en cubos</li>
+                <li>1 zanahoria cortada en cubos</li>
+                <li>1/4 taza de habas</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1 cucharadita de comino</li>
+                <li>1 litro de caldo de carne</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Remoja el chuño y el trigo por unas horas, luego hiérvelos por separado hasta que estén tiernos.<br>
+            2. En una olla, sofríe la cebolla y el ajo, agrega la carne y dora.<br>
+            3. Añade el caldo, chuño, trigo, papas, zanahoria, habas, comino, sal y pimienta.<br>
+            4. Cocina a fuego lento por 1 hora hasta que todos los ingredientes estén bien integrados.<br>
+            5. Sirve caliente, opcionalmente con perejil.</p>
+        </div>
+
+        <!-- Plato 10: Api con Pastel -->
+        <div class="dish">
+            <h2>Api con Pastel</h2>
+            <img src="https://example.com/api-con-pastel.jpg" alt="Api con Pastel">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1/2 kg de maíz morado</li>
+                <li>2 litros de agua</li>
+                <li>1 rama de canela</li>
+                <li>3 clavos de olor</li>
+                <li>1/2 taza de azúcar</li>
+                <li>500 g de harina de trigo (para el pastel)</li>
+                <li>100 g de manteca</li>
+                <li>1 huevo</li>
+                <li>200 g de queso fresco rallado</li>
+                <li>Aceite para freír</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Para el api, hierve el maíz morado con agua, canela y clavos de olor hasta que esté suave, unas 2 horas.<br>
+            2. Cuela y endulza con azúcar, ajustando la consistencia con más agua si es necesario.<br>
+            3. Para el pastel, mezcla la harina con manteca, huevo y queso hasta formar una masa.<br>
+            4. Estira la masa, corta círculos, y fríelos en aceite caliente hasta que estén dorados.<br>
+            5. Sirve el api caliente acompañado de los pasteles fritos.</p>
+        </div>
+
+        <a href="/tradition-food/countries.html" class="back-button">Volver</a>
     </div>
 </body>
 </html>
