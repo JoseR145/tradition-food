@@ -3,24 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chile - Traditional Food</title>
+    <title>Platos Típicos de Chile</title>
     <link rel="stylesheet" href="/tradition-food/assets/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://example.com/latin-pattern-chile.jpg') repeat; /* Fondo con patrón chileno */
+            background-color: #f4d03f; /* Amarillo como color de respaldo */
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para legibilidad */
+            border-radius: 10px;
+        }
+        h1 {
+            font-family: 'Comic Sans MS', 'Chalkboard', sans-serif;
+            color: #d32f2f;
+            text-shadow: 2px 2px 0 #1976d2;
+            text-align: center;
+        }
+        .dish {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #388e3c;
+            border-radius: 10px;
+            background: #fff;
+        }
+        .dish h2 {
+            color: #e91e63;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .dish img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .dish h3 {
+            color: #1976d2;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .dish p, .dish ul {
+            color: #1b5e20;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .dish ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: #e91e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #fbc02d;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Comida Tradicional de Chile</h1>
-        <div class="recipe-list">
-            <h2>Recetas Populares</h2>
-            <div class="recipe">
-                <h3>Empanada de Pino</h3>
-                <p>Empanada rellena de carne, cebolla, huevo duro y aceitunas.</p>
-            </div>
-            <div class="recipe">
-                <h3>Cazuela</h3>
-                <p>Sopa con carne de vacuno, zapallo, papa y choclo.</p>
-            </div>
+        <h1>Platos Típicos de Chile</h1>
+
+        <!-- Plato 1: Empanada de Pino -->
+        <div class="dish">
+            <h2>Empanada de Pino</h2>
+            <img src="https://example.com/empanada-de-pino.jpg" alt="Empanada de Pino">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de harina de trigo</li>
+                <li>100 g de manteca</li>
+                <li>1/2 taza de agua tibia</li>
+                <li>1 cucharadita de sal</li>
+                <li>500 g de carne de res picada</li>
+                <li>2 cebollas picadas</li>
+                <li>2 huevos duros picados</li>
+                <li>1/4 taza de aceitunas negras</li>
+                <li>1/4 taza de pasas</li>
+                <li>1 cucharadita de comino</li>
+                <li>1 cucharadita de ají de color</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Para la masa, mezcla la harina con la manteca, agua y sal hasta formar una masa suave. Deja reposar 30 minutos.<br>
+            2. En una sartén, sofríe la cebolla, agrega la carne, comino, ají de color, sal y pimienta, y cocina hasta que la carne esté lista.<br>
+            3. Añade los huevos duros, aceitunas y pasas al relleno y deja enfriar.<br>
+            4. Estira la masa, corta círculos, coloca el relleno en el centro, dobla y sella con un repulgue.<br>
+            5. Hornea a 200°C por 25-30 minutos hasta que estén doradas.</p>
         </div>
-        <a href="/tradition-food/countries.html"><button class="start-button">Volver a Países</button></a>
+
+        <!-- Plato 2: Cazuela -->
+        <div class="dish">
+            <h2>Cazuela</h2>
+            <img src="https://example.com/cazuela.jpg" alt="Cazuela">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de carne de vacuno (pollo o cerdo también funcionan)</li>
+                <li>1 zapallo (calabaza) en trozos</li>
+                <li>2 papas cortadas</li>
+                <li>1 mazorca de maíz cortada en rodajas</li>
+                <li>1 zanahoria cortada</li>
+                <li>1/4 taza de porotos verdes</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1 cucharadita de comino</li>
+                <li>1 litro de caldo de carne</li>
+                <li>1/4 taza de cilantro picado</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. En una olla, sofríe la cebolla y el ajo, agrega la carne y dora.<br>
+            2. Añade el caldo, zapallo, papas, maíz, zanahoria, porotos verdes, comino, sal y pimienta.<br>
+            3. Cocina a fuego medio por 45 minutos hasta que las verduras y la carne estén tiernas.<br>
+            4. Sirve caliente, decorado con cilantro.</p>
+        </div>
+
+        <!-- Plato 3: Pastel de Choclo -->
+        <div class="dish">
+            <h2>Pastel de Choclo</h2>
+            <img src="https://example.com/pastel-de-choclo.jpg" alt="Pastel de Choclo">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>6 mazorcas de maíz frescas (desgranadas)</li>
+                <li>1/2 taza de leche</li>
+                <li>2 cucharadas de azúcar</li>
+                <li>500 g de carne de res picada</li>
+                <li>2 cebollas picadas</li>
+                <li>2 huevos duros picados</li>
+                <li>1/4 taza de aceitunas negras</li>
+                <li>1/4 taza de pasas</li>
+                <li>1 pechuga de pollo cocida y deshebrada</li>
+                <li>1 cucharadita de comino</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Licúa el maíz con la leche y azúcar hasta obtener una pasta suave, luego cocina a fuego bajo hasta que espese, unos 15 minutos.<br>
+            2. En una sartén, sofríe la cebolla, agrega la carne, comino, sal y pimienta, y cocina hasta que la carne esté lista.<br>
+            3. En un molde para horno, coloca una capa de carne, huevos duros, aceitunas, pasas y pollo.<br>
+            4. Cubre con la pasta de maíz y hornea a 180°C por 30 minutos hasta que esté dorado.<br>
+            5. Sirve caliente.</p>
+        </div>
+
+        <!-- Plato 4: Porotos con Riendas -->
+        <div class="dish">
+            <h2>Porotos con Riendas</h2>
+            <img src="https://example.com/porotos-con-riendas.jpg" alt="Porotos con Riendas">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de porotos (frijoles) remojados</li>
+                <li>200 g de tallarines</li>
+                <li>1/4 kg de zapallo (calabaza) en trozos</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1 cucharadita de ají de color</li>
+                <li>1 cucharadita de comino</li>
+                <li>1 litro de caldo de verduras</li>
+                <li>1/4 taza de perejil picado</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina los porotos en agua con sal hasta que estén tiernos, unas 2 horas.<br>
+            2. En una olla, sofríe la cebolla y el ajo, agrega el ají de color, comino, sal y pimienta.<br>
+            3. Añade los porotos cocidos con su caldo, el zapallo y el caldo de verduras, y cocina por 20 minutos.<br>
+            4. Agrega los tallarines y cocina hasta que estén al dente, unos 10 minutos.<br>
+            5. Sirve caliente, decorado con perejil.</p>
+        </div>
+
+        <!-- Plato 5: Completo -->
+        <div class="dish">
+            <h2>Completo</h2>
+            <img src="https://example.com/completo.jpg" alt="Completo">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>4 panes para hot dog</li>
+                <li>4 salchichas</li>
+                <li>2 tomates picados</li>
+                <li>1 aguacate (palta) machacado</li>
+                <li>1/4 taza de mayonesa</li>
+                <li>1/4 taza de chucrut (opcional)</li>
+                <li>Sal al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina las salchichas en agua hirviendo por 5 minutos.<br>
+            2. Calienta los panes ligeramente.<br>
+            3. Coloca una salchicha en cada pan, agrega tomate, palta, mayonesa y chucrut si lo deseas.<br>
+            4. Sazona con sal al gusto.<br>
+            5. Sirve inmediatamente.</p>
+        </div>
+
+        <!-- Plato 6: Curanto -->
+        <div class="dish">
+            <h2>Curanto</h2>
+            <img src="https://example.com/curanto.jpg" alt="Curanto">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de mariscos (cholgas, almejas, choritos)</li>
+                <li>500 g de pollo</li>
+                <li>500 g de cerdo</li>
+                <li>4 papas</li>
+                <li>2 mazorcas de maíz</li>
+                <li>1/4 kg de longaniza</li>
+                <li>1/4 kg de milcao (masa de papa)</li>
+                <li>1/4 kg de chapalele (masa de papa con harina)</li>
+                <li>Hojas de nalca o repollo (para cocinar)</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Tradicionalmente, se cava un hoyo en la tierra y se calientan piedras al rojo vivo.<br>
+            2. Cubre las piedras con hojas de nalca o repollo.<br>
+            3. Coloca los mariscos, carnes, papas, maíz, longaniza, milcao y chapalele en capas, sazonando con sal y pimienta.<br>
+            4. Cubre con más hojas y cocina al vapor por 1-2 horas (o usa una olla grande si no puedes hacer un hoyo).<br>
+            5. Sirve caliente, compartiendo todos los ingredientes.</p>
+        </div>
+
+        <!-- Plato 7: Sopaipillas -->
+        <div class="dish">
+            <h2>Sopaipillas</h2>
+            <img src="https://example.com/sopaipillas.jpg" alt="Sopaipillas">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de harina de trigo</li>
+                <li>200 g de zapallo (calabaza) cocido y hecho puré</li>
+                <li>1 cucharadita de polvo para hornear</li>
+                <li>1 cucharadita de sal</li>
+                <li>1/4 taza de agua tibia</li>
+                <li>Aceite para freír</li>
+                <li>Chancaca (para versión dulce, opcional)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Mezcla la harina, zapallo, polvo para hornear, sal y agua hasta formar una masa suave.<br>
+            2. Estira la masa con un rodillo y corta círculos con un cortador.<br>
+            3. Fríe los círculos en aceite caliente hasta que estén dorados por ambos lados, unos 2-3 minutos por lado.<br>
+            4. Para versión salada, sirve con pebre (salsa de tomate, cebolla y cilantro). Para versión dulce, remoja en salsa de chancaca.<br>
+            5. Sirve caliente.</p>
+        </div>
+
+        <!-- Plato 8: Pebre -->
+        <div class="dish">
+            <h2>Pebre</h2>
+            <img src="https://example.com/pebre.jpg" alt="Pebre">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>2 tomates picados</li>
+                <li>1 cebolla picada</li>
+                <li>1/4 taza de cilantro picado</li>
+                <li>1 ají verde picado</li>
+                <li>2 cucharadas de aceite de oliva</li>
+                <li>1 cucharada de vinagre</li>
+                <li>Jugo de 1 limón</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. En un tazón, mezcla el tomate, cebolla, cilantro y ají.<br>
+            2. Agrega el aceite, vinagre, jugo de limón, sal y pimienta.<br>
+            3. Mezcla bien y deja reposar por 15 minutos para que los sabores se integren.<br>
+            4. Sirve como acompañamiento para empanadas, sopaipillas o carnes.<br>
+            5. Puede ajustarse el picante según tu gusto.</p>
+        </div>
+
+        <!-- Plato 9: Charquicán -->
+        <div class="dish">
+            <h2>Charquicán</h2>
+            <img src="https://example.com/charquican.jpg" alt="Charquicán">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de carne de res picada</li>
+                <li>4 papas cortadas en cubos</li>
+                <li>200 g de zapallo (calabaza) en cubos</li>
+                <li>1 mazorca de maíz desgranada</li>
+                <li>1/4 taza de porotos verdes</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1 cucharadita de ají de color</li>
+                <li>1 litro de caldo de carne</li>
+                <li>2 huevos fritos (para acompañar)</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. En una olla, sofríe la cebolla y el ajo, agrega la carne y dora.<br>
+            2. Añade las papas, zapallo, maíz, porotos verdes, ají de color, sal y pimienta.<br>
+            3. Cubre con el caldo y cocina a fuego medio por 30 minutos hasta que las verduras estén tiernas.<br>
+            4. Machaca ligeramente las verduras para darle textura.<br>
+            5. Sirve caliente con un huevo frito encima.</p>
+        </div>
+
+        <!-- Plato 10: Mote con Huesillo -->
+        <div class="dish">
+            <h2>Mote con Huesillo</h2>
+            <img src="https://example.com/mote-con-huesillo.jpg" alt="Mote con Huesillo">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>200 g de mote (trigo pelado)</li>
+                <li>200 g de huesillos (duraznos secos)</li>
+                <li>1/2 taza de azúcar</li>
+                <li>1 rama de canela</li>
+                <li>2 litros de agua</li>
+                <li>1 cucharadita de ralladura de limón</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Remoja el mote y los huesillos por separado en agua durante 12 horas.<br>
+            2. Cocina el mote en agua con sal hasta que esté tierno, unas 2 horas, y escurre.<br>
+            3. En una olla, hierve los huesillos con el agua, azúcar, canela y ralladura de limón por 30 minutos hasta que estén suaves y el líquido se caramelice.<br>
+            4. Deja enfriar el líquido con los huesillos.<br>
+            5. Sirve en un vaso con una cucharada de mote, un huesillo y el jugo caramelizado.</p>
+        </div>
+
+        <a href="/tradition-food/countries.html" class="back-button">Volver</a>
     </div>
 </body>
 </html>
