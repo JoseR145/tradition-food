@@ -3,24 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uruguay - Traditional Food</title>
+    <title>Platos Típicos de Uruguay</title>
     <link rel="stylesheet" href="/tradition-food/assets/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://example.com/latin-pattern-uruguay.jpg') repeat; /* Fondo con patrón uruguayo */
+            background-color: #f4d03f; /* Amarillo como color de respaldo */
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para legibilidad */
+            border-radius: 10px;
+        }
+        h1 {
+            font-family: 'Comic Sans MS', 'Chalkboard', sans-serif;
+            color: #d32f2f;
+            text-shadow: 2px 2px 0 #1976d2;
+            text-align: center;
+        }
+        .dish {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #388e3c;
+            border-radius: 10px;
+            background: #fff;
+        }
+        .dish h2 {
+            color: #e91e63;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .dish img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .dish h3 {
+            color: #1976d2;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .dish p, .dish ul {
+            color: #1b5e20;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .dish ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: #e91e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #fbc02d;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Comida Tradicional de Uruguay</h1>
-        <div class="recipe-list">
-            <h2>Recetas Populares</h2>
-            <div class="recipe">
-                <h3>Asado</h3>
-                <p>Carne a la parrilla, servida con chimichurri y acompañamientos.</p>
-            </div>
-            <div class="recipe">
-                <h3>Chivito</h3>
-                <p>Sándwich con carne, lechuga, tomate, huevo y mayonesa.</p>
-            </div>
+        <h1>Platos Típicos de Uruguay</h1>
+
+        <!-- Plato 1: Asado -->
+        <div class="dish">
+            <h2>Asado</h2>
+            <img src="https://example.com/asado.jpg" alt="Asado">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de carne de res (costilla o vacío)</li>
+                <li>1/4 taza de sal gruesa</li>
+                <li>1 cucharadita de pimienta negra</li>
+                <li>1/4 taza de chimichurri</li>
+                <li>Ensalada de tomate y lechuga (para acompañar)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Sazona la carne con sal gruesa y pimienta, y deja reposar por 30 minutos.<br>
+            2. Prepara una parrilla con carbón y cocina la carne a fuego medio, unos 10-15 minutos por lado, según el punto deseado.<br>
+            3. Corta la carne en porciones.<br>
+            4. Sirve caliente con chimichurri y ensalada.<br>
+            5. Ideal para reuniones familiares o con amigos.</p>
         </div>
-        <a href="/tradition-food/countries.html"><button class="start-button">Volver a Países</button></a>
+
+        <!-- Plato 2: Chivito -->
+        <div class="dish">
+            <h2>Chivito</h2>
+            <img src="https://example.com/chivito.jpg" alt="Chivito">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 filete de lomo de res (150 g)</li>
+                <li>1 pan de hamburguesa</li>
+                <li>1 huevo frito</li>
+                <li>2 rebanadas de jamón</li>
+                <li>2 rebanadas de queso mozzarella</li>
+                <li>1 tomate en rodajas</li>
+                <li>1/4 taza de lechuga</li>
+                <li>1/4 taza de mayonesa</li>
+                <li>1/4 taza de papas fritas (para acompañar)</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Sazona el filete con sal y pimienta, y cocínalo en una plancha o sartén, 3-4 minutos por lado.<br>
+            2. Tuesta el pan y úntalo con mayonesa.<br>
+            3. Arma el chivito: coloca el filete, jamón, queso, huevo frito, tomate y lechuga.<br>
+            4. Cierra el pan y sirve con papas fritas.<br>
+            5. Puede incluir panceta o aceitunas si lo deseas.</p>
+        </div>
+
+        <!-- Plato 3: Milanesa -->
+        <div class="dish">
+            <h2>Milanesa</h2>
+            <img src="https://example.com/milanesa.jpg" alt="Milanesa">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de carne de res (nalga o lomo)</li>
+                <li>2 huevos batidos</li>
+                <li>1 taza de pan rallado</li>
+                <li>1/4 taza de perejil picado</li>
+                <li>2 dientes de ajo picados</li>
+                <li>Jugo de 1 limón</li>
+                <li>Aceite para freír</li>
+                <li>1/4 taza de puré de papas (para acompañar)</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Sazona la carne con sal, pimienta, ajo y jugo de limón, y deja reposar por 30 minutos.<br>
+            2. Pasa la carne por huevo batido y luego por pan rallado mezclado con perejil.<br>
+            3. Fríe en aceite caliente, unos 3-4 minutos por lado, hasta que esté dorada.<br>
+            4. Escurre sobre papel absorbente.<br>
+            5. Sirve con puré de papas o ensalada.</p>
+        </div>
+
+        <!-- Plato 4: Pastel de Carne -->
+        <div class="dish">
+            <h2>Pastel de Carne</h2>
+            <img src="https://example.com/pastel-de-carne.jpg" alt="Pastel de Carne">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de carne molida</li>
+                <li>1 kg de papas</li>
+                <li>1 cebolla picada</li>
+                <li>1 pimiento rojo picado</li>
+                <li>2 huevos cocidos (picados)</li>
+                <li>1/4 taza de aceitunas picadas</li>
+                <li>1/4 taza de leche</li>
+                <li>2 cucharadas de manteca</li>
+                <li>1 cucharadita de comino</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina las papas en agua con sal, haz un puré con leche y manteca, y reserva.<br>
+            2. Sofríe la cebolla, pimiento y comino, agrega la carne molida y cocina por 15 minutos.<br>
+            3. Incorpora los huevos y aceitunas, sazona con sal y pimienta.<br>
+            4. En un molde, coloca una capa de puré, la carne y otra capa de puré.<br>
+            5. Hornea a 180°C por 20 minutos hasta que esté dorado, y sirve caliente.</p>
+        </div>
+
+        <!-- Plato 5: Choripán -->
+        <div class="dish">
+            <h2>Choripán</h2>
+            <img src="https://example.com/choripan.jpg" alt="Choripán">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>2 chorizos</li>
+                <li>2 panes franceses</li>
+                <li>1/4 taza de chimichurri</li>
+                <li>1 tomate en rodajas (opcional)</li>
+                <li>1/4 taza de lechuga (opcional)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Asa los chorizos en una parrilla a fuego medio, unos 10 minutos, hasta que estén bien cocidos.<br>
+            2. Corta los panes a lo largo y tuéstalos ligeramente en la parrilla.<br>
+            3. Coloca el chorizo dentro del pan y agrega chimichurri.<br>
+            4. Añade tomate y lechuga si lo deseas.<br>
+            5. Sirve caliente, ideal como aperitivo.</p>
+        </div>
+
+        <!-- Plato 6: Ñoquis -->
+        <div class="dish">
+            <h2>Ñoquis</h2>
+            <img src="https://example.com/noquis.jpg" alt="Ñoquis">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de papas</li>
+                <li>1 taza de harina de trigo</li>
+                <li>1 huevo</li>
+                <li>1/2 taza de queso parmesano</li>
+                <li>1 taza de salsa de tomate</li>
+                <li>1/4 taza de albahaca picada</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina las papas en agua con sal, haz un puré y mezcla con harina, huevo y sal.<br>
+            2. Amasa hasta formar una masa suave, forma rollos y corta en trozos pequeños.<br>
+            3. Cocina los ñoquis en agua hirviendo hasta que floten, unos 2-3 minutos.<br>
+            4. Escurre y mezcla con salsa de tomate caliente.<br>
+            5. Sirve con queso parmesano y albahaca.</p>
+        </div>
+
+        <!-- Plato 7: Fainá -->
+        <div class="dish">
+            <h2>Fainá</h2>
+            <img src="https://example.com/faina.jpg" alt="Fainá">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 taza de harina de garbanzo</li>
+                <li>1 taza de agua</li>
+                <li>1/4 taza de aceite de oliva</li>
+                <li>1 cucharadita de sal</li>
+                <li>1/2 cucharadita de pimienta negra</li>
+                <li>1/4 taza de queso parmesano (opcional)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Mezcla la harina de garbanzo con agua, aceite, sal y pimienta hasta obtener una masa líquida.<br>
+            2. Deja reposar por 30 minutos.<br>
+            3. Vierte la mezcla en un molde engrasado y espolvorea con queso si lo deseas.<br>
+            4. Hornea a 200°C por 20-25 minutos hasta que esté dorada.<br>
+            5. Sirve caliente, ideal para acompañar pizza.</p>
+        </div>
+
+        <!-- Plato 8: Pascualina -->
+        <div class="dish">
+            <h2>Pascualina</h2>
+            <img src="https://example.com/pascualina.jpg" alt="Pascualina">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>2 láminas de masa para tarta</li>
+                <li>500 g de espinaca cocida</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>4 huevos</li>
+                <li>1/2 taza de queso ricota</li>
+                <li>1/4 taza de queso parmesano</li>
+                <li>1/4 taza de leche</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Sofríe la cebolla y ajo, agrega la espinaca y cocina por 5 minutos.<br>
+            2. Mezcla la espinaca con ricota, parmesano, leche, 2 huevos batidos, sal y pimienta.<br>
+            3. Forra un molde con una lámina de masa, agrega el relleno y haz 2 huecos para colocar los 2 huevos restantes.<br>
+            4. Cubre con la otra lámina de masa y sella los bordes.<br>
+            5. Hornea a 180°C por 40 minutos hasta que esté dorada, y sirve caliente o fría.</p>
+        </div>
+
+        <!-- Plato 9: Pancho -->
+        <div class="dish">
+            <h2>Pancho</h2>
+            <img src="https://example.com/pancho.jpg" alt="Pancho">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>2 salchichas</li>
+                <li>2 panes para pancho</li>
+                <li>1/4 taza de mostaza</li>
+                <li>1/4 taza de ketchup</li>
+                <li>1/4 taza de mayonesa</li>
+                <li>1/4 taza de papas fritas trituradas (opcional)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina las salchichas en agua hirviendo por 5 minutos o ásalas en una parrilla.<br>
+            2. Calienta los panes ligeramente.<br>
+            3. Coloca la salchicha en el pan y agrega mostaza, ketchup y mayonesa al gusto.<br>
+            4. Espolvorea con papas fritas trituradas si lo deseas.<br>
+            5. Sirve inmediatamente, ideal como snack rápido.</p>
+        </div>
+
+        <!-- Plato 10: Alfajores -->
+        <div class="dish">
+            <h2>Alfajores</h2>
+            <img src="https://example.com/alfajores.jpg" alt="Alfajores">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 taza de harina de trigo</li>
+                <li>1 taza de maicena</li>
+                <li>1/2 taza de manteca</li>
+                <li>1/2 taza de azúcar</li>
+                <li>1 huevo</li>
+                <li>1 cucharadita de polvo para hornear</li>
+                <li>1/2 taza de dulce de leche</li>
+                <li>1/4 taza de coco rallado</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Bate la manteca con el azúcar, agrega el huevo y mezcla bien.<br>
+            2. Incorpora la harina, maicena y polvo para hornear, y amasa hasta formar una masa suave.<br>
+            3. Estira la masa y corta círculos, hornea a 180°C por 10-12 minutos.<br>
+            4. Una vez fríos, une dos galletas con dulce de leche y cubre los bordes con coco rallado.<br>
+            5. Sirve como postre o para acompañar mate.</p>
+        </div>
+
+        <a href="/tradition-food/countries.html" class="back-button">Volver</a>
     </div>
 </body>
 </html>
