@@ -3,24 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perú - Traditional Food</title>
+    <title>Platos Típicos de Perú</title>
     <link rel="stylesheet" href="/tradition-food/assets/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://example.com/latin-pattern-peru.jpg') repeat; /* Fondo con patrón peruano */
+            background-color: #f4d03f; /* Amarillo como color de respaldo */
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para legibilidad */
+            border-radius: 10px;
+        }
+        h1 {
+            font-family: 'Comic Sans MS', 'Chalkboard', sans-serif;
+            color: #d32f2f;
+            text-shadow: 2px 2px 0 #1976d2;
+            text-align: center;
+        }
+        .dish {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #388e3c;
+            border-radius: 10px;
+            background: #fff;
+        }
+        .dish h2 {
+            color: #e91e63;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .dish img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .dish h3 {
+            color: #1976d2;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .dish p, .dish ul {
+            color: #1b5e20;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .dish ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: #e91e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: #fbc02d;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Comida Tradicional de Perú</h1>
-        <div class="recipe-list">
-            <h2>Recetas Populares</h2>
-            <div class="recipe">
-                <h3>Ceviche</h3>
-                <p>Pescado crudo marinado en jugo de limón con cebolla y ají.</p>
-            </div>
-            <div class="recipe">
-                <h3>Lomo Saltado</h3>
-                <p>Carne salteada con papas fritas, tomate y cebolla.</p>
-            </div>
+        <h1>Platos Típicos de Perú</h1>
+
+        <!-- Plato 1: Ceviche -->
+        <div class="dish">
+            <h2>Ceviche</h2>
+            <img src="https://example.com/ceviche.jpg" alt="Ceviche">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de pescado blanco fresco (corvina o lenguado)</li>
+                <li>1 taza de jugo de limón</li>
+                <li>1 cebolla morada en juliana</li>
+                <li>1 ají limo picado (o ají amarillo)</li>
+                <li>1/4 taza de cilantro picado</li>
+                <li>1 camote cocido</li>
+                <li>1 mazorca de maíz cocida</li>
+                <li>Sal y pimienta al gusto</li>
+                <li>Canche (maíz tostado, opcional)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Corta el pescado en cubos y marina en jugo de limón con sal por 10 minutos.<br>
+            2. Escurre un poco del jugo y mezcla el pescado con cebolla, ají, cilantro, sal y pimienta.<br>
+            3. Sirve inmediatamente con camote, maíz y cancha.<br>
+            4. Ajusta el sabor con más limón si lo deseas.<br>
+            5. Ideal como entrada o plato principal.</p>
         </div>
-        <a href="/tradition-food/countries.html"><button class="start-button">Volver a Países</button></a>
+
+        <!-- Plato 2: Lomo Saltado -->
+        <div class="dish">
+            <h2>Lomo Saltado</h2>
+            <img src="https://example.com/lomo-saltado.jpg" alt="Lomo Saltado">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de lomo de res en tiras</li>
+                <li>2 papas fritas</li>
+                <li>1 cebolla morada en juliana</li>
+                <li>1 tomate en gajos</li>
+                <li>1 ají amarillo en tiras</li>
+                <li>1/4 taza de salsa de soya</li>
+                <li>1/4 taza de vinagre tinto</li>
+                <li>1/4 taza de cilantro picado</li>
+                <li>2 dientes de ajo picados</li>
+                <li>Arroz blanco (para acompañar)</li>
+                <li>Aceite para freír</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Fríe las papas en aceite caliente hasta que estén doradas y reserva.<br>
+            2. En un wok o sartén, saltea la carne con ajo, sal y pimienta a fuego alto por 2 minutos.<br>
+            3. Agrega la cebolla, tomate, ají, salsa de soya y vinagre, y saltea por 2 minutos más.<br>
+            4. Incorpora las papas fritas y cilantro, mezcla bien.<br>
+            5. Sirve caliente con arroz blanco.</p>
+        </div>
+
+        <!-- Plato 3: Aji de Gallina -->
+        <div class="dish">
+            <h2>Aji de Gallina</h2>
+            <img src="https://example.com/aji-de-gallina.jpg" alt="Aji de Gallina">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de pollo (pechuga)</li>
+                <li>3 ajíes amarillos (licuados)</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1/2 taza de leche evaporada</li>
+                <li>4 rebanadas de pan de molde</li>
+                <li>1/4 taza de nueces picadas</li>
+                <li>1/4 taza de queso parmesano</li>
+                <li>1 litro de caldo de pollo</li>
+                <li>2 papas cocidas</li>
+                <li>1 huevo cocido (para decorar)</li>
+                <li>Arroz blanco (para acompañar)</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina el pollo en agua con sal, desmenúzalo y reserva el caldo.<br>
+            2. Remoja el pan en leche evaporada y licúa hasta formar una pasta.<br>
+            3. Sofríe la cebolla y ajo, agrega el ají amarillo licuado y cocina por 5 minutos.<br>
+            4. Incorpora el pan remojado, nueces, queso, caldo y pollo desmenuzado, y cocina por 15 minutos hasta que espese.<br>
+            5. Sirve con papas, arroz blanco y decora con huevo cocido.</p>
+        </div>
+
+        <!-- Plato 4: Papa a la Huancaína -->
+        <div class="dish">
+            <h2>Papa a la Huancaína</h2>
+            <img src="https://example.com/papa-a-la-huancaina.jpg" alt="Papa a la Huancaína">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>4 papas amarillas cocidas</li>
+                <li>3 ajíes amarillos (licuados)</li>
+                <li>1/2 taza de queso fresco</li>
+                <li>1/2 taza de leche evaporada</li>
+                <li>2 galletas de soda</li>
+                <li>1/4 taza de aceite</li>
+                <li>1 huevo cocido (para decorar)</li>
+                <li>1/4 taza de aceitunas negras</li>
+                <li>Lechuga (para servir)</li>
+                <li>Sal al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Licúa los ajíes amarillos con queso fresco, leche, galletas, aceite y sal hasta obtener una salsa cremosa.<br>
+            2. Corta las papas cocidas en rodajas y colócalas sobre una cama de lechuga.<br>
+            3. Cubre las papas con la salsa huancaína.<br>
+            4. Decora con huevo cocido y aceitunas negras.<br>
+            5. Sirve frío como entrada o acompañamiento.</p>
+        </div>
+
+        <!-- Plato 5: Arroz con Pollo -->
+        <div class="dish">
+            <h2>Arroz con Pollo</h2>
+            <img src="https://example.com/arroz-con-pollo.jpg" alt="Arroz con Pollo">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de pollo (muslos o pechuga)</li>
+                <li>2 tazas de arroz</li>
+                <li>1/2 taza de cilantro licuado con agua</li>
+                <li>1/4 taza de guisantes</li>
+                <li>1/4 taza de zanahoria picada</li>
+                <li>1 pimiento rojo picado</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1 litro de caldo de pollo</li>
+                <li>1/4 taza de cerveza (opcional)</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Sazona el pollo con sal y pimienta, y sofríelo hasta que esté dorado, luego retíralo.<br>
+            2. En la misma olla, sofríe la cebolla, ajo y pimiento.<br>
+            3. Agrega el cilantro licuado, guisantes, zanahoria, arroz, caldo y cerveza, y mezcla bien.<br>
+            4. Coloca el pollo encima, tapa y cocina a fuego bajo por 25-30 minutos.<br>
+            5. Sirve caliente con salsa criolla si lo deseas.</p>
+        </div>
+
+        <!-- Plato 6: Anticuchos -->
+        <div class="dish">
+            <h2>Anticuchos</h2>
+            <img src="https://example.com/anticuchos.jpg" alt="Anticuchos">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de corazón de res (limpio y en cubos)</li>
+                <li>1/4 taza de vinagre tinto</li>
+                <li>2 cucharadas de pasta de ají panca</li>
+                <li>1 cucharadita de comino</li>
+                <li>1 cucharadita de orégano</li>
+                <li>2 dientes de ajo picados</li>
+                <li>Palitos de brocheta</li>
+                <li>2 papas cocidas</li>
+                <li>1 mazorca de maíz cocida</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Marina el corazón con vinagre, ají panca, comino, orégano, ajo, sal y pimienta por 4 horas.<br>
+            2. Ensarta los cubos de corazón en los palitos de brocheta.<br>
+            3. Asa en una parrilla a fuego medio, unos 3-4 minutos por lado, pincelando con la marinada.<br>
+            4. Sirve caliente con papas y maíz.<br>
+            5. Acompaña con salsa de ají si lo deseas.</p>
+        </div>
+
+        <!-- Plato 7: Causa Limeña -->
+        <div class="dish">
+            <h2>Causa Limeña</h2>
+            <img src="https://example.com/causa-limena.jpg" alt="Causa Limeña">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 kg de papa amarilla</li>
+                <li>200 g de pollo desmenuzado</li>
+                <li>1/4 taza de mayonesa</li>
+                <li>1/4 taza de ají amarillo licuado</li>
+                <li>Jugo de 2 limones</li>
+                <li>1 aguacate en rodajas</li>
+                <li>1 huevo cocido (para decorar)</li>
+                <li>1/4 taza de aceitunas negras</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina las papas en agua con sal, haz un puré y mezcla con ají amarillo, jugo de limón, sal y pimienta.<br>
+            2. Mezcla el pollo desmenuzado con mayonesa, sal y pimienta.<br>
+            3. En un molde, coloca una capa de puré de papa, una capa de pollo y una capa de aguacate, termina con otra capa de puré.<br>
+            4. Refrigera por 1 hora, desmolda y decora con huevo y aceitunas.<br>
+            5. Sirve frío como entrada.</p>
+        </div>
+
+        <!-- Plato 8: Pachamanca -->
+        <div class="dish">
+            <h2>Pachamanca</h2>
+            <img src="https://example.com/pachamanca.jpg" alt="Pachamanca">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de carne de res</li>
+                <li>500 g de pollo</li>
+                <li>500 g de cerdo</li>
+                <li>4 papas</li>
+                <li>2 camotes</li>
+                <li>1 mazorca de maíz</li>
+                <li>1/4 taza de huacatay picado</li>
+                <li>1/4 taza de ají panca licuado</li>
+                <li>1 cucharadita de comino</li>
+                <li>Hojas de plátano (para envolver)</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Marina las carnes con ají panca, huacatay, comino, sal y pimienta por 2 horas.<br>
+            2. Precalienta un horno de tierra (o usa un horno convencional a 180°C).<br>
+            3. Coloca las carnes, papas, camotes y maíz en capas, envolviendo con hojas de plátano.<br>
+            4. Cocina por 2-3 horas hasta que todo esté tierno.<br>
+            5. Sirve caliente, ideal para celebraciones.</p>
+        </div>
+
+        <!-- Plato 9: Juane -->
+        <div class="dish">
+            <h2>Juane</h2>
+            <img src="https://example.com/juane.jpg" alt="Juane">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500 g de pollo</li>
+                <li>2 tazas de arroz</li>
+                <li>2 huevos batidos</li>
+                <li>1/4 taza de aceitunas</li>
+                <li>1 cebolla picada</li>
+                <li>2 dientes de ajo picados</li>
+                <li>1 cucharadita de comino</li>
+                <li>1 cucharadita de cúrcuma</li>
+                <li>Hojas de bijao (o plátano) para envolver</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Sofríe la cebolla, ajo, comino y cúrcuma, agrega el pollo y cocina por 15 minutos.<br>
+            2. Cocina el arroz con agua y sal hasta que esté al dente.<br>
+            3. Mezcla el arroz con los huevos batidos y el pollo.<br>
+            4. Coloca una porción de la mezcla en una hoja de bijao, agrega una aceituna, envuelve y amarra.<br>
+            5. Cocina al vapor por 1 hora y sirve caliente.</p>
+        </div>
+
+        <!-- Plato 10: Suspiro Limeño -->
+        <div class="dish">
+            <h2>Suspiro Limeño</h2>
+            <img src="https://example.com/suspiro-limeno.jpg" alt="Suspiro Limeño">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 lata de leche evaporada</li>
+                <li>1 lata de leche condensada</li>
+                <li>4 yemas de huevo</li>
+                <li>1 cucharadita de esencia de vainilla</li>
+                <li>2 claras de huevo</li>
+                <li>1/2 taza de azúcar</li>
+                <li>1/4 taza de oporto</li>
+                <li>Canela en polvo (para decorar)</li>
+            </ul>
+            <h3>Preparación:</h3>
+            <p>1. Cocina la leche evaporada y condensada a fuego bajo, revolviendo hasta que espese, unos 15 minutos.<br>
+            2. Retira del fuego, agrega las yemas y la vainilla, y mezcla bien.<br>
+            3. Vierte la mezcla en copas y deja enfriar.<br>
+            4. Bate las claras con azúcar y oporto a punto de merengue, y cubre la crema con el merengue.<br>
+            5. Espolvorea con canela y sirve frío.</p>
+        </div>
+
+        <a href="/tradition-food/countries.html" class="back-button">Volver</a>
     </div>
 </body>
 </html>
