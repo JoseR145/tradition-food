@@ -13,18 +13,19 @@
             padding: 0;
             background-color: #1a1a1a;
             color: #fff;
-            background-image: url('https://example.com/food-collage-background.jpg'); /* Fondo con collage de comida */
+            background-image: url('https://example.com/food-collage-background.jpg');
             background-size: cover;
             background-attachment: fixed;
         }
         /* Menú de navegación */
         .navbar {
-            background-color: #1a1a1a;
+            background-color: rgba(26, 26, 26, 0.9);
             padding: 20px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-            position: sticky;
+            position: fixed;
             top: 0;
+            width: 100%;
             z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
         .navbar .container {
             max-width: 1200px;
@@ -32,15 +33,17 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0 20px;
         }
         .navbar .logo {
             font-family: 'Playfair Display', serif;
             font-size: 28px;
-            color: #d4af37; /* Dorado elegante */
+            color: #d4af37;
             text-decoration: none;
         }
         .navbar .menu {
             display: flex;
+            align-items: center;
             gap: 20px;
         }
         .navbar .menu a {
@@ -56,33 +59,61 @@
             background-color: #d4af37;
             color: #1a1a1a;
         }
-        /* Contenido principal */
-        .main-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-            text-align: center;
+        .navbar .menu .start-button {
+            background-color: #d4af37;
+            color: #1a1a1a;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
-        h1 {
+        .navbar .menu .start-button:hover {
+            background-color: #fff;
+            color: #1a1a1a;
+        }
+        /* Sección Hero (opcional, para un encabezado visual) */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero h1 {
             font-family: 'Playfair Display', serif;
             font-size: 48px;
             color: #fff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             margin-bottom: 20px;
         }
-        .slogan {
+        .hero .slogan {
             font-family: 'Georgia', serif;
             font-size: 24px;
             color: #d4af37;
-            margin-bottom: 40px;
             text-transform: uppercase;
             letter-spacing: 2px;
+        }
+        /* Lista de países */
+        .countries-section {
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .countries-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: #d4af37;
+            text-align: center;
+            margin-bottom: 40px;
         }
         .country-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .country-link {
             display: inline-block;
@@ -111,14 +142,20 @@
                 <a href="/tradition-food/index.html">Inicio</a>
                 <a href="/tradition-food/about.html">Sobre Nosotros</a>
                 <a href="/tradition-food/contact.html">Contacto</a>
+                <a href="#countries" class="start-button">Comenzar</a>
             </div>
         </div>
     </nav>
 
-    <!-- Contenido principal -->
-    <div class="main-container">
+    <!-- Sección Hero (opcional, para un encabezado visual) -->
+    <div class="hero">
         <h1>Comida Tradicional Latinoamericana</h1>
         <p class="slogan">Sabores que nunca olvidarás</p>
+    </div>
+
+    <!-- Lista de países -->
+    <section id="countries" class="countries-section">
+        <h2>Explora por País</h2>
         <div class="country-list">
             <a href="/tradition-food/pages/argentina.html" class="country-link">Argentina</a>
             <a href="/tradition-food/pages/bolivia.html" class="country-link">Bolivia</a>
@@ -138,6 +175,6 @@
             <a href="/tradition-food/pages/uruguay.html" class="country-link">Uruguay</a>
             <a href="/tradition-food/pages/venezuela.html" class="country-link">Venezuela</a>
         </div>
-    </div>
+    </section>
 </body>
 </html>
