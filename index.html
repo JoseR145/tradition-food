@@ -16,12 +16,12 @@
             overflow: hidden; /* Evita barras de desplazamiento innecesarias */
         }
         .container {
-            width: 1365px; /* Ancho exacto que mencionaste */
-            height: 650px; /* Altura exacta que mencionaste */
-            max-width: 100%; /* Para pantallas más pequeñas */
-            max-height: 100%; /* Para pantallas más pequeñas */
+            width: 1365px; /* Ancho base */
+            height: 650px; /* Altura base */
+            max-width: 100%; /* Ajusta a pantallas más pequeñas */
+            max-height: 100%; /* Ajusta a pantallas más pequeñas */
             background-image: url('/tradition-food/assets/home-background.jpg');
-            background-size: cover; /* Escala la imagen para cubrir el contenedor */
+            background-size: contain; /* Muestra la imagen completa sin recortarla */
             background-position: center; /* Centra la imagen */
             background-repeat: no-repeat; /* Evita que la imagen se repita */
             position: relative;
@@ -61,6 +61,9 @@
             }
         }
         @media (max-width: 768px) {
+            .container {
+                width: 90%; /* Reduce un poco el ancho para mejor visualización */
+            }
             .start-button {
                 font-size: 14px;
                 padding: 6px 12px;
