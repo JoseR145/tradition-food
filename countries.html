@@ -6,7 +6,7 @@
     <title>Países - Comida Tradicional Latinoamericana</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -16,18 +16,26 @@
             background-color: #d4af37;
             color: #1a1a1a;
             text-align: center;
-            padding: 1em 0;
+            padding: 1.5em 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
         nav {
             background-color: #1a1a1a;
             padding: 1em 0;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
         nav a {
             color: #d4af37;
             text-decoration: none;
             margin: 0 20px;
             font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
         }
         nav a:hover {
             color: #fff;
@@ -40,17 +48,27 @@
         h2 {
             text-align: center;
             color: #1a1a1a;
+            font-size: 2em;
+            margin-bottom: 30px;
         }
         .country-list {
             list-style: none;
             padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
         }
         .country-list li {
-            margin: 20px;
-            text-align: center;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .country-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         .country-list a {
             text-decoration: none;
@@ -70,11 +88,19 @@
         }
         /* Media query para pantallas más pequeñas */
         @media (max-width: 768px) {
+            .country-list {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 15px;
+            }
             .country-list a {
                 font-size: 1em; /* Reduce el tamaño del texto */
             }
             .country-list img {
                 width: 24px; /* Reduce el tamaño de la bandera */
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 1em;
             }
         }
     </style>
@@ -84,30 +110,30 @@
         <h1>Comida Tradicional Latinoamericana</h1>
     </header>
     <nav>
-        <a href="/tradition-food/index.html">Inicio</a>
-        <a href="/tradition-food/about.html">Sobre Nosotros</a>
-        <a href="/tradition-food/contact.html">Contacto</a>
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Sobre Nosotros</a>
+        <a href="contact.html">Contacto</a>
     </nav>
     <div class="container">
         <h2>Países</h2>
         <ul class="country-list">
-            <li><a href="/tradition-food/countries/argentina.html"><img src="https://flagcdn.com/w40/ar.png" alt="Bandera de Argentina"> Argentina</a></li>
-            <li><a href="/tradition-food/countries/bolivia.html"><img src="https://flagcdn.com/w40/bo.png" alt="Bandera de Bolivia"> Bolivia</a></li>
-            <li><a href="/tradition-food/countries/brasil.html"><img src="https://flagcdn.com/w40/br.png" alt="Bandera de Brasil"> Brasil</a></li>
-            <li><a href="/tradition-food/countries/chile.html"><img src="https://flagcdn.com/w40/cl.png" alt="Bandera de Chile"> Chile</a></li>
-            <li><a href="/tradition-food/countries/colombia.html"><img src="https://flagcdn.com/w40/co.png" alt="Bandera de Colombia"> Colombia</a></li>
-            <li><a href="/tradition-food/countries/costa_rica.html"><img src="https://flagcdn.com/w40/cr.png" alt="Bandera de Costa Rica"> Costa Rica</a></li>
-            <li><a href="/tradition-food/countries/ecuador.html"><img src="https://flagcdn.com/w40/ec.png" alt="Bandera de Ecuador"> Ecuador</a></li>
-            <li><a href="/tradition-food/countries/el_salvador.html"><img src="https://flagcdn.com/w40/sv.png" alt="Bandera de El Salvador"> El Salvador</a></li>
-            <li><a href="/tradition-food/countries/guatemala.html"><img src="https://flagcdn.com/w40/gt.png" alt="Bandera de Guatemala"> Guatemala</a></li>
-            <li><a href="/tradition-food/countries/honduras.html"><img src="https://flagcdn.com/w40/hn.png" alt="Bandera de Honduras"> Honduras</a></li>
-            <li><a href="/tradition-food/countries/mexico.html"><img src="https://flagcdn.com/w40/mx.png" alt="Bandera de México"> México</a></li>
-            <li><a href="/tradition-food/countries/nicaragua.html"><img src="https://flagcdn.com/w40/ni.png" alt="Bandera de Nicaragua"> Nicaragua</a></li>
-            <li><a href="/tradition-food/countries/panama.html"><img src="https://flagcdn.com/w40/pa.png" alt="Bandera de Panamá"> Panamá</a></li>
-            <li><a href="/tradition-food/countries/paraguay.html"><img src="https://flagcdn.com/w40/py.png" alt="Bandera de Paraguay"> Paraguay</a></li>
-            <li><a href="/tradition-food/countries/peru.html"><img src="https://flagcdn.com/w40/pe.png" alt="Bandera de Perú"> Perú</a></li>
-            <li><a href="/tradition-food/countries/uruguay.html"><img src="https://flagcdn.com/w40/uy.png" alt="Bandera de Uruguay"> Uruguay</a></li>
-            <li><a href="/tradition-food/countries/venezuela.html"><img src="https://flagcdn.com/w40/ve.png" alt="Bandera de Venezuela"> Venezuela</a></li>
+            <li><a href="countries/argentina.html"><img src="https://flagcdn.com/w40/ar.png" alt="Bandera de Argentina"> Argentina</a></li>
+            <li><a href="countries/bolivia.html"><img src="https://flagcdn.com/w40/bo.png" alt="Bandera de Bolivia"> Bolivia</a></li>
+            <li><a href="countries/brasil.html"><img src="https://flagcdn.com/w40/br.png" alt="Bandera de Brasil"> Brasil</a></li>
+            <li><a href="countries/chile.html"><img src="https://flagcdn.com/w40/cl.png" alt="Bandera de Chile"> Chile</a></li>
+            <li><a href="countries/colombia.html"><img src="https://flagcdn.com/w40/co.png" alt="Bandera de Colombia"> Colombia</a></li>
+            <li><a href="countries/costa_rica.html"><img src="https://flagcdn.com/w40/cr.png" alt="Bandera de Costa Rica"> Costa Rica</a></li>
+            <li><a href="countries/ecuador.html"><img src="https://flagcdn.com/w40/ec.png" alt="Bandera de Ecuador"> Ecuador</a></li>
+            <li><a href="countries/el_salvador.html"><img src="https://flagcdn.com/w40/sv.png" alt="Bandera de El Salvador"> El Salvador</a></li>
+            <li><a href="countries/guatemala.html"><img src="https://flagcdn.com/w40/gt.png" alt="Bandera de Guatemala"> Guatemala</a></li>
+            <li><a href="countries/honduras.html"><img src="https://flagcdn.com/w40/hn.png" alt="Bandera de Honduras"> Honduras</a></li>
+            <li><a href="countries/mexico.html"><img src="https://flagcdn.com/w40/mx.png" alt="Bandera de México"> México</a></li>
+            <li><a href="countries/nicaragua.html"><img src="https://flagcdn.com/w40/ni.png" alt="Bandera de Nicaragua"> Nicaragua</a></li>
+            <li><a href="countries/panama.html"><img src="https://flagcdn.com/w40/pa.png" alt="Bandera de Panamá"> Panamá</a></li>
+            <li><a href="countries/paraguay.html"><img src="https://flagcdn.com/w40/py.png" alt="Bandera de Paraguay"> Paraguay</a></li>
+            <li><a href="countries/peru.html"><img src="https://flagcdn.com/w40/pe.png" alt="Bandera de Perú"> Perú</a></li>
+            <li><a href="countries/uruguay.html"><img src="https://flagcdn.com/w40/uy.png" alt="Bandera de Uruguay"> Uruguay</a></li>
+            <li><a href="countries/venezuela.html"><img src="https://flagcdn.com/w40/ve.png" alt="Bandera de Venezuela"> Venezuela</a></li>
         </ul>
     </div>
 </body>
