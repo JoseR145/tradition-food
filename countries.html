@@ -9,8 +9,8 @@
             font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
-            color: #333;
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Color de texto por defecto blanco */
         }
         header {
             background-color: #d4af37;
@@ -44,10 +44,11 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #000; /* Fondo negro para el contenedor */
         }
         h2 {
             text-align: center;
-            color: #1a1a1a;
+            color: #fff; /* Título en blanco */
             font-size: 2em;
             margin-bottom: 30px;
         }
@@ -60,26 +61,26 @@
             justify-items: center;
         }
         .country-list li {
-            background-color: #fff;
+            background-color: transparent; /* Fondo transparente */
             padding: 15px;
+            border: 2px solid #d4af37; /* Borde dorado para la cuadrícula */
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .country-list li:hover {
             transform: translateY(-5px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(212, 175, 55, 0.5); /* Sombra dorada al hacer hover */
         }
         .country-list a {
             text-decoration: none;
-            color: #333;
+            color: #fff; /* Texto blanco */
             font-size: 1.2em;
             display: flex;
             align-items: center;
             gap: 10px; /* Espacio entre la bandera y el nombre */
         }
         .country-list a:hover {
-            color: #d4af37;
+            color: #d4af37; /* Color dorado al hacer hover */
         }
         .country-list img {
             width: 32px; /* Tamaño de la bandera */
