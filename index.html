@@ -12,7 +12,7 @@
             padding: 0;
             background-color: #1a1a1a;
             color: #fff;
-            background-image: url('https://example.com/food-collage-background.jpg');
+            background-image: url('https://example.com/culinary-elements-background.jpg'); /* Fondo con elementos culinarios */
             background-size: cover;
             background-attachment: fixed;
             height: 100vh;
@@ -21,38 +21,76 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
+        /* Elementos decorativos (simulación con imágenes) */
+        .decorative-elements img {
+            position: absolute;
+            opacity: 0.8;
+        }
+        .decorative-elements .spatula {
+            top: 10%;
+            left: 5%;
+            width: 100px;
+            transform: rotate(-20deg);
+        }
+        .decorative-elements .herbs {
+            top: 15%;
+            right: 5%;
+            width: 80px;
+            transform: rotate(30deg);
+        }
+        .decorative-elements .garlic {
+            bottom: 10%;
+            left: 10%;
+            width: 60px;
+        }
+        .decorative-elements .bottle {
+            bottom: 5%;
+            right: 10%;
+            width: 80px;
+            transform: rotate(15deg);
+        }
+        /* Contenido principal */
         .hero {
             background: rgba(0, 0, 0, 0.5);
             padding: 40px;
             border-radius: 10px;
+            position: relative;
+            z-index: 1;
         }
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 72px; /* Letras grandes */
+            font-size: 96px; /* Letras grandes como en la foto */
             color: #fff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            margin: 0 0 20px 0;
+            margin: 0 0 10px 0;
+            line-height: 1;
         }
         .hero .slogan {
             font-family: 'Georgia', serif;
-            font-size: 28px;
+            font-size: 24px;
             color: #d4af37;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
+        /* Botón "Comenzar" en la esquina superior derecha */
         .start-button {
-            display: inline-block;
-            padding: 15px 40px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
             background-color: #d4af37;
             color: #1a1a1a;
             text-decoration: none;
             border-radius: 5px;
             font-family: 'Georgia', serif;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
             transition: background-color 0.3s ease, color 0.3s ease;
+            z-index: 2;
         }
         .start-button:hover {
             background-color: #fff;
@@ -61,10 +99,19 @@
     </style>
 </head>
 <body>
+    <!-- Elementos decorativos -->
+    <div class="decorative-elements">
+        <img src="https://example.com/spatula.png" alt="Spatula" class="spatula">
+        <img src="https://example.com/herbs.png" alt="Herbs" class="herbs">
+        <img src="https://example.com/garlic.png" alt="Garlic" class="garlic">
+        <img src="https://example.com/bottle.png" alt="Bottle" class="bottle">
+    </div>
+
+    <!-- Contenido principal -->
+    <a href="/tradition-food/countries.html" class="start-button">Comenzar</a>
     <div class="hero">
         <h1>Sabores Latinos</h1>
         <p class="slogan">Sabores que nunca olvidarás</p>
-        <a href="/tradition-food/countries.html" class="start-button">Comenzar</a>
     </div>
 </body>
 </html>
