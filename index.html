@@ -9,16 +9,22 @@
             margin: 0;
             padding: 0;
             height: 100vh;
-            background-image: url('/tradition-food/assets/home-background.jpg');
-            background-size: contain; /* Ajusta la imagen para que se vea completa sin estirarse */
-            background-position: center; /* Centra la imagen */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            background-color: #1a1a1a; /* Fondo negro para áreas vacías */
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
+            background-color: #1a1a1a; /* Fondo negro para áreas vacías */
             overflow: hidden; /* Evita barras de desplazamiento innecesarias */
+        }
+        .container {
+            width: 1365px; /* Ancho exacto que mencionaste */
+            height: 650px; /* Altura exacta que mencionaste */
+            max-width: 100%; /* Para pantallas más pequeñas */
+            max-height: 100%; /* Para pantallas más pequeñas */
+            background-image: url('/tradition-food/assets/home-background.jpg');
+            background-size: cover; /* Escala la imagen para cubrir el contenedor */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            position: relative;
         }
         /* Botón "Comenzar" en la esquina superior derecha */
         .start-button {
@@ -41,9 +47,11 @@
             color: #1a1a1a;
         }
         /* Media queries para pantallas más pequeñas */
-        @media (max-width: 768px) {
-            body {
-                background-size: 80%; /* Reduce el tamaño de la imagen en pantallas pequeñas */
+        @media (max-width: 1365px) {
+            .container {
+                width: 100%; /* Ajusta el ancho al 100% del viewport */
+                height: auto; /* Mantiene la proporción */
+                aspect-ratio: 1365 / 650; /* Mantiene la proporción 1365:650 */
             }
             .start-button {
                 font-size: 16px;
@@ -52,10 +60,7 @@
                 right: 10px;
             }
         }
-        @media (max-width: 480px) {
-            body {
-                background-size: 60%; /* Reduce aún más el tamaño en pantallas muy pequeñas */
-            }
+        @media (max-width: 768px) {
             .start-button {
                 font-size: 14px;
                 padding: 6px 12px;
@@ -66,7 +71,9 @@
     </style>
 </head>
 <body>
-    <!-- Botón "Comenzar" -->
-    <a href="/tradition-food/countries.html" class="start-button">Comenzar</a>
+    <div class="container">
+        <!-- Botón "Comenzar" -->
+        <a href="/tradition-food/countries.html" class="start-button">Comenzar</a>
+    </div>
 </body>
 </html>
