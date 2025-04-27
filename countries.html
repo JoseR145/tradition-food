@@ -3,134 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Países - Comida Tradicional Latinoamericana</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
+    <title>Países - Comida Tradicional Latinoamericana</title>
     <style>
         body {
-            font-family: 'Georgia', serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a;
-            color: #fff;
-            background-image: url('https://example.com/food-collage-background.jpg');
-            background-size: cover;
-            background-attachment: fixed;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        /* Menú de navegación */
-        .navbar {
-            background-color: rgba(26, 26, 26, 0.9);
-            padding: 20px 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-        }
-        .navbar .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-        .navbar .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            color: #d4af37;
-            text-decoration: none;
-        }
-        .navbar .menu {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .navbar .menu a {
-            font-family: 'Georgia', serif;
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        .navbar .menu a:hover {
+        header {
             background-color: #d4af37;
             color: #1a1a1a;
-        }
-        /* Lista de países */
-        .countries-section {
-            padding: 100px 20px 60px 20px; /* Margen superior para no superponerse con el menú fijo */
-            background: rgba(0, 0, 0, 0.7);
-            min-height: 100vh;
-        }
-        .countries-section h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 36px;
-            color: #d4af37;
             text-align: center;
-            margin-bottom: 40px;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #1a1a1a;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            color: #d4af37;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #1a1a1a;
         }
         .country-list {
+            list-style: none;
+            padding: 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
         }
-        .country-link {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #333;
-            color: #fff;
+        .country-list li {
+            margin: 20px;
+            text-align: center;
+        }
+        .country-list a {
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            font-family: 'Georgia', serif;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            border: 1px solid #d4af37;
+            color: #333;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Espacio entre la bandera y el nombre */
         }
-        .country-link:hover {
-            background-color: #d4af37;
-            color: #1a1a1a;
+        .country-list a:hover {
+            color: #d4af37;
+        }
+        .country-list img {
+            width: 32px; /* Tamaño de la bandera */
+            height: auto;
+            vertical-align: middle;
+        }
+        /* Media query para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            .country-list a {
+                font-size: 1em; /* Reduce el tamaño del texto */
+            }
+            .country-list img {
+                width: 24px; /* Reduce el tamaño de la bandera */
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Menú de navegación -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="/tradition-food/index.html" class="logo">Sabores Latinos</a>
-            <div class="menu">
-                <a href="/tradition-food/index.html">Inicio</a>
-                
-            </div>
-        </div>
+    <header>
+        <h1>Comida Tradicional Latinoamericana</h1>
+    </header>
+    <nav>
+        <a href="/tradition-food/index.html">Inicio</a>
+        <a href="/tradition-food/about.html">Sobre Nosotros</a>
+        <a href="/tradition-food/contact.html">Contacto</a>
     </nav>
-
-    <!-- Lista de países -->
-    <section class="countries-section">
-        <h2>Explora por País</h2>
-        <div class="country-list">
-            <a href="/tradition-food/pages/argentina.html" class="country-link">Argentina</a>
-            <a href="/tradition-food/pages/bolivia.html" class="country-link">Bolivia</a>
-            <a href="/tradition-food/pages/brasil.html" class="country-link">Brasil</a>
-            <a href="/tradition-food/pages/chile.html" class="country-link">Chile</a>
-            <a href="/tradition-food/pages/colombia.html" class="country-link">Colombia</a>
-            <a href="/tradition-food/pages/costa-rica.html" class="country-link">Costa Rica</a>
-            <a href="/tradition-food/pages/ecuador.html" class="country-link">Ecuador</a>
-            <a href="/tradition-food/pages/el-salvador.html" class="country-link">El Salvador</a>
-            <a href="/tradition-food/pages/guatemala.html" class="country-link">Guatemala</a>
-            <a href="/tradition-food/pages/honduras.html" class="country-link">Honduras</a>
-            <a href="/tradition-food/pages/mexico.html" class="country-link">México</a>
-            <a href="/tradition-food/pages/nicaragua.html" class="country-link">Nicaragua</a>
-            <a href="/tradition-food/pages/panama.html" class="country-link">Panamá</a>
-            <a href="/tradition-food/pages/paraguay.html" class="country-link">Paraguay</a>
-            <a href="/tradition-food/pages/peru.html" class="country-link">Perú</a>
-            <a href="/tradition-food/pages/uruguay.html" class="country-link">Uruguay</a>
-            <a href="/tradition-food/pages/venezuela.html" class="country-link">Venezuela</a>
-        </div>
-    </section>
+    <div class="container">
+        <h2>Países</h2>
+        <ul class="country-list">
+            <li><a href="/tradition-food/countries/argentina.html"><img src="https://flagcdn.com/w40/ar.png" alt="Bandera de Argentina"> Argentina</a></li>
+            <li><a href="/tradition-food/countries/bolivia.html"><img src="https://flagcdn.com/w40/bo.png" alt="Bandera de Bolivia"> Bolivia</a></li>
+            <li><a href="/tradition-food/countries/brasil.html"><img src="https://flagcdn.com/w40/br.png" alt="Bandera de Brasil"> Brasil</a></li>
+            <li><a href="/tradition-food/countries/chile.html"><img src="https://flagcdn.com/w40/cl.png" alt="Bandera de Chile"> Chile</a></li>
+            <li><a href="/tradition-food/countries/colombia.html"><img src="https://flagcdn.com/w40/co.png" alt="Bandera de Colombia"> Colombia</a></li>
+            <li><a href="/tradition-food/countries/costa_rica.html"><img src="https://flagcdn.com/w40/cr.png" alt="Bandera de Costa Rica"> Costa Rica</a></li>
+            <li><a href="/tradition-food/countries/ecuador.html"><img src="https://flagcdn.com/w40/ec.png" alt="Bandera de Ecuador"> Ecuador</a></li>
+            <li><a href="/tradition-food/countries/el_salvador.html"><img src="https://flagcdn.com/w40/sv.png" alt="Bandera de El Salvador"> El Salvador</a></li>
+            <li><a href="/tradition-food/countries/guatemala.html"><img src="https://flagcdn.com/w40/gt.png" alt="Bandera de Guatemala"> Guatemala</a></li>
+            <li><a href="/tradition-food/countries/honduras.html"><img src="https://flagcdn.com/w40/hn.png" alt="Bandera de Honduras"> Honduras</a></li>
+            <li><a href="/tradition-food/countries/mexico.html"><img src="https://flagcdn.com/w40/mx.png" alt="Bandera de México"> México</a></li>
+            <li><a href="/tradition-food/countries/nicaragua.html"><img src="https://flagcdn.com/w40/ni.png" alt="Bandera de Nicaragua"> Nicaragua</a></li>
+            <li><a href="/tradition-food/countries/panama.html"><img src="https://flagcdn.com/w40/pa.png" alt="Bandera de Panamá"> Panamá</a></li>
+            <li><a href="/tradition-food/countries/paraguay.html"><img src="https://flagcdn.com/w40/py.png" alt="Bandera de Paraguay"> Paraguay</a></li>
+            <li><a href="/tradition-food/countries/peru.html"><img src="https://flagcdn.com/w40/pe.png" alt="Bandera de Perú"> Perú</a></li>
+            <li><a href="/tradition-food/countries/uruguay.html"><img src="https://flagcdn.com/w40/uy.png" alt="Bandera de Uruguay"> Uruguay</a></li>
+            <li><a href="/tradition-food/countries/venezuela.html"><img src="https://flagcdn.com/w40/ve.png" alt="Bandera de Venezuela"> Venezuela</a></li>
+        </ul>
+    </div>
 </body>
 </html>
