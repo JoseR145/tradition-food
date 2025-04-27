@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comida Tradicional Latinoamericana</title>
-    <link rel="stylesheet" href="/tradition-food/assets/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
     <style>
         body {
@@ -16,165 +15,56 @@
             background-image: url('https://example.com/food-collage-background.jpg');
             background-size: cover;
             background-attachment: fixed;
-        }
-        /* Menú de navegación */
-        .navbar {
-            background-color: rgba(26, 26, 26, 0.9);
-            padding: 20px 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-        }
-        .navbar .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-        .navbar .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            color: #d4af37;
-            text-decoration: none;
-        }
-        .navbar .menu {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .navbar .menu a {
-            font-family: 'Georgia', serif;
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        .navbar .menu a:hover {
-            background-color: #d4af37;
-            color: #1a1a1a;
-        }
-        .navbar .menu .start-button {
-            background-color: #d4af37;
-            color: #1a1a1a;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        .navbar .menu .start-button:hover {
-            background-color: #fff;
-            color: #1a1a1a;
-        }
-        /* Sección Hero (opcional, para un encabezado visual) */
-        .hero {
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
+        }
+        .hero {
             background: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
         }
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 48px;
+            font-size: 72px; /* Letras grandes */
             color: #fff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px;
+            margin: 0 0 20px 0;
         }
         .hero .slogan {
             font-family: 'Georgia', serif;
-            font-size: 24px;
+            font-size: 28px;
             color: #d4af37;
             text-transform: uppercase;
             letter-spacing: 2px;
-        }
-        /* Lista de países */
-        .countries-section {
-            padding: 60px 20px;
-            background: rgba(0, 0, 0, 0.7);
-        }
-        .countries-section h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 36px;
-            color: #d4af37;
-            text-align: center;
             margin-bottom: 40px;
         }
-        .country-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .country-link {
+        .start-button {
             display: inline-block;
-            padding: 15px 30px;
-            background-color: #333;
-            color: #fff;
+            padding: 15px 40px;
+            background-color: #d4af37;
+            color: #1a1a1a;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 18px;
             font-family: 'Georgia', serif;
+            font-size: 20px;
+            font-weight: bold;
             transition: background-color 0.3s ease, color 0.3s ease;
-            border: 1px solid #d4af37;
         }
-        .country-link:hover {
-            background-color: #d4af37;
+        .start-button:hover {
+            background-color: #fff;
             color: #1a1a1a;
         }
     </style>
 </head>
 <body>
-    <!-- Menú de navegación -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="/tradition-food/index.html" class="logo">Sabores Latinos</a>
-            <div class="menu">
-                <a href="/tradition-food/index.html">Inicio</a>
-                <a href="/tradition-food/about.html">Sobre Nosotros</a>
-                <a href="/tradition-food/contact.html">Contacto</a>
-                <a href="#countries" class="start-button">Comenzar</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Sección Hero (opcional, para un encabezado visual) -->
     <div class="hero">
-        <h1>Comida Tradicional Latinoamericana</h1>
+        <h1>Sabores Latinos</h1>
         <p class="slogan">Sabores que nunca olvidarás</p>
+        <a href="/tradition-food/countries.html" class="start-button">Comenzar</a>
     </div>
-
-    <!-- Lista de países -->
-    <section id="countries" class="countries-section">
-        <h2>Explora por País</h2>
-        <div class="country-list">
-            <a href="/tradition-food/pages/argentina.html" class="country-link">Argentina</a>
-            <a href="/tradition-food/pages/bolivia.html" class="country-link">Bolivia</a>
-            <a href="/tradition-food/pages/brasil.html" class="country-link">Brasil</a>
-            <a href="/tradition-food/pages/chile.html" class="country-link">Chile</a>
-            <a href="/tradition-food/pages/colombia.html" class="country-link">Colombia</a>
-            <a href="/tradition-food/pages/costa-rica.html" class="country-link">Costa Rica</a>
-            <a href="/tradition-food/pages/ecuador.html" class="country-link">Ecuador</a>
-            <a href="/tradition-food/pages/el-salvador.html" class="country-link">El Salvador</a>
-            <a href="/tradition-food/pages/guatemala.html" class="country-link">Guatemala</a>
-            <a href="/tradition-food/pages/honduras.html" class="country-link">Honduras</a>
-            <a href="/tradition-food/pages/mexico.html" class="country-link">México</a>
-            <a href="/tradition-food/pages/nicaragua.html" class="country-link">Nicaragua</a>
-            <a href="/tradition-food/pages/panama.html" class="country-link">Panamá</a>
-            <a href="/tradition-food/pages/paraguay.html" class="country-link">Paraguay</a>
-            <a href="/tradition-food/pages/peru.html" class="country-link">Perú</a>
-            <a href="/tradition-food/pages/uruguay.html" class="country-link">Uruguay</a>
-            <a href="/tradition-food/pages/venezuela.html" class="country-link">Venezuela</a>
-        </div>
-    </section>
 </body>
 </html>
