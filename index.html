@@ -3,79 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traditional Food - América Latina</title>
+    <title>Comida Tradicional Latinoamericana</title>
     <link rel="stylesheet" href="/tradition-food/assets/style.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background: #f4d03f; /* Amarillo de fondo */
-            overflow: hidden;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            background-image: url('https://example.com/food-collage-background.jpg'); /* Fondo con collage de comida */
+            background-size: cover;
+            background-attachment: fixed;
         }
         .container {
-            text-align: center;
-            position: relative;
-            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
         }
         h1 {
-            font-family: 'Comic Sans MS', 'Chalkboard', sans-serif; /* Fuente divertida */
-            font-size: 60px;
-            color: #d32f2f; /* Rojo vibrante */
-            text-shadow: 3px 3px 0 #1976d2, 6px 6px 0 #388e3c; /* Sombras azul y verde */
-            margin-bottom: 40px;
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
         }
-        .start-button {
-            padding: 20px 40px;
-            background-color: #e91e63; /* Rosa */
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
+        .slogan {
+            font-family: 'Georgia', serif;
             font-size: 24px;
-            transition: transform 0.2s, background-color 0.3s;
+            color: #d4af37; /* Dorado elegante */
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .country-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .country-link {
             display: inline-block;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            padding: 15px 30px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            border: 1px solid #d4af37;
         }
-        .start-button:hover {
-            transform: scale(1.1);
-            background-color: #fbc02d; /* Amarillo al hover */
-        }
-        /* Formas decorativas de fondo */
-        .background-shapes::before,
-        .background-shapes::after {
-            content: '';
-            position: absolute;
-            z-index: 0;
-        }
-        .background-shapes::before {
-            width: 150px;
-            height: 150px;
-            background: #1976d2; /* Azul */
-            clip-path: circle(50%);
-            top: 10%;
-            left: 10%;
-            opacity: 0.7;
-        }
-        .background-shapes::after {
-            width: 100px;
-            height: 100px;
-            background: #388e3c; /* Verde */
-            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-            bottom: 15%;
-            right: 15%;
-            opacity: 0.7;
+        .country-link:hover {
+            background-color: #d4af37;
+            color: #1a1a1a;
         }
     </style>
 </head>
 <body>
-    <div class="background-shapes"></div>
     <div class="container">
-        <h1>Traditional Food</h1>
-        <a href="/tradition-food/countries.html" class="start-button">Comenzar</a>
+        <h1>Comida Tradicional Latinoamericana</h1>
+        <p class="slogan">Sabores que nunca olvidarás</p>
+        <div class="country-list">
+            <a href="/tradition-food/pages/argentina.html" class="country-link">Argentina</a>
+            <a href="/tradition-food/pages/bolivia.html" class="country-link">Bolivia</a>
+            <a href="/tradition-food/pages/brasil.html" class="country-link">Brasil</a>
+            <a href="/tradition-food/pages/chile.html" class="country-link">Chile</a>
+            <a href="/tradition-food/pages/colombia.html" class="country-link">Colombia</a>
+            <a href="/tradition-food/pages/costa-rica.html" class="country-link">Costa Rica</a>
+            <a href="/tradition-food/pages/ecuador.html" class="country-link">Ecuador</a>
+            <a href="/tradition-food/pages/el-salvador.html" class="country-link">El Salvador</a>
+            <a href="/tradition-food/pages/guatemala.html" class="country-link">Guatemala</a>
+            <a href="/tradition-food/pages/honduras.html" class="country-link">Honduras</a>
+            <a href="/tradition-food/pages/mexico.html" class="country-link">México</a>
+            <a href="/tradition-food/pages/nicaragua.html" class="country-link">Nicaragua</a>
+            <a href="/tradition-food/pages/panama.html" class="country-link">Panamá</a>
+            <a href="/tradition-food/pages/paraguay.html" class="country-link">Paraguay</a>
+            <a href="/tradition-food/pages/peru.html" class="country-link">Perú</a>
+            <a href="/tradition-food/pages/uruguay.html" class="country-link">Uruguay</a>
+            <a href="/tradition-food/pages/venezuela.html" class="country-link">Venezuela</a>
+        </div>
     </div>
 </body>
 </html>
