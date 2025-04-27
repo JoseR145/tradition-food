@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comida Tradicional Latinoamericana</title>
     <link rel="stylesheet" href="/tradition-food/assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -12,15 +13,55 @@
             padding: 0;
             background-color: #1a1a1a;
             color: #fff;
-            text-align: center;
             background-image: url('https://example.com/food-collage-background.jpg'); /* Fondo con collage de comida */
             background-size: cover;
             background-attachment: fixed;
         }
-        .container {
+        /* Menú de navegación */
+        .navbar {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #d4af37; /* Dorado elegante */
+            text-decoration: none;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            font-family: 'Georgia', serif;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .navbar .menu a:hover {
+            background-color: #d4af37;
+            color: #1a1a1a;
+        }
+        /* Contenido principal */
+        .main-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 60px 20px;
+            text-align: center;
         }
         h1 {
             font-family: 'Playfair Display', serif;
@@ -32,7 +73,7 @@
         .slogan {
             font-family: 'Georgia', serif;
             font-size: 24px;
-            color: #d4af37; /* Dorado elegante */
+            color: #d4af37;
             margin-bottom: 40px;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -51,7 +92,8 @@
             text-decoration: none;
             border-radius: 5px;
             font-size: 18px;
-            transition: background-color 0.3s ease;
+            font-family: 'Georgia', serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
             border: 1px solid #d4af37;
         }
         .country-link:hover {
@@ -61,7 +103,20 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/tradition-food/index.html" class="logo">Sabores Latinos</a>
+            <div class="menu">
+                <a href="/tradition-food/index.html">Inicio</a>
+                <a href="/tradition-food/about.html">Sobre Nosotros</a>
+                <a href="/tradition-food/contact.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="main-container">
         <h1>Comida Tradicional Latinoamericana</h1>
         <p class="slogan">Sabores que nunca olvidarás</p>
         <div class="country-list">
