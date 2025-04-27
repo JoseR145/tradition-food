@@ -9,14 +9,16 @@
             margin: 0;
             padding: 0;
             height: 100vh;
-            background-image: url('/tradition-food/assets/home-background.jpg'); /* Reemplaza con la ruta real de la imagen */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background-image: url('/tradition-food/assets/home-background.jpg');
+            background-size: contain; /* Ajusta la imagen para que se vea completa sin estirarse */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-color: #1a1a1a; /* Fondo negro para áreas vacías */
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
+            overflow: hidden; /* Evita barras de desplazamiento innecesarias */
         }
         /* Botón "Comenzar" en la esquina superior derecha */
         .start-button {
@@ -24,7 +26,7 @@
             top: 20px;
             right: 20px;
             padding: 10px 20px;
-            background-color: #d4af37; /* Fondo dorado como en la foto de "Tío Luchín" */
+            background-color: #d4af37; /* Fondo dorado */
             color: #1a1a1a; /* Texto negro */
             text-decoration: none;
             border-radius: 5px;
@@ -37,6 +39,29 @@
         .start-button:hover {
             background-color: #fff;
             color: #1a1a1a;
+        }
+        /* Media queries para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            body {
+                background-size: 80%; /* Reduce el tamaño de la imagen en pantallas pequeñas */
+            }
+            .start-button {
+                font-size: 16px;
+                padding: 8px 16px;
+                top: 10px;
+                right: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                background-size: 60%; /* Reduce aún más el tamaño en pantallas muy pequeñas */
+            }
+            .start-button {
+                font-size: 14px;
+                padding: 6px 12px;
+                top: 5px;
+                right: 5px;
+            }
         }
     </style>
 </head>
