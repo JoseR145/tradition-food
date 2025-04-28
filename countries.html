@@ -54,22 +54,23 @@
         }
         .country-list {
             list-style: none;
-            padding: 0;
+            padding: 20px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             justify-items: center;
+            border: 2px solid #d4af37; /* Borde dorado para la cuadrícula general */
+            border-radius: 8px;
+            background-color: #000; /* Fondo negro dentro de la cuadrícula */
         }
         .country-list li {
-            background-color: transparent; /* Fondo transparente */
-            padding: 15px;
-            border: 2px solid #d4af37; /* Borde dorado para la cuadrícula */
-            border-radius: 8px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: transparent; /* Fondo transparente para cada elemento */
+            padding: 10px;
+            border: none; /* Sin borde individual */
+            transition: transform 0.3s ease;
         }
         .country-list li:hover {
             transform: translateY(-5px);
-            box-shadow: 0 4px 10px rgba(212, 175, 55, 0.5); /* Sombra dorada al hacer hover */
         }
         .country-list a {
             text-decoration: none;
